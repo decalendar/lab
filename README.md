@@ -2,6 +2,8 @@
 
 The published version of this lab notebook is available at <https://maptv.github.io/lab>.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mcanouil/quarto-codespaces?quickstart=1&devcontainer_path=.devcontainer%2Fdevcontainer.json)
+
 All of the chapters for the lab have already been published.
 
 ## Setup
