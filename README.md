@@ -14,6 +14,8 @@ All of the chapters for the lab have already been published.
 
 1. Go to <https://maptv.github.io/lab>
 2. Click the "Fork" button in the upper right corner of the page to create a copy of the repository (repo) in your own GitHub account
-3. Click the button below in your forked repo
+3. Click the button below
+4. Select your forked repo
+5. Click "Create codespace"
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/?quickstart=1&devcontainer_path=.devcontainer%2Fdevcontainer.json)
