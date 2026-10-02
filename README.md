@@ -13,7 +13,7 @@ All of the chapters for the lab have already been published.
    b.  Otherwise, use a pre-existing or newly-created Google account (<https://www.google.com/account/about>) to create a new GitHub account (<https://github.com/signup>)
 
 1. Go to <https://maptv.github.io/lab>
-2. Click the "Fork" button in the upper right corner of the page to create a copy of the repository (repo) in your own GitHub account.
-3. Once the forked repo is open in your web browser, click the button below.
+2. Click the "Fork" button in the upper right corner of the page to create a copy of the repository (repo) in your own GitHub account
+3. Click the button below in your forked repo
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/mcanouil/quarto-codespaces?quickstart=1&devcontainer_path=.devcontainer%2Fdevcontainer.json)
