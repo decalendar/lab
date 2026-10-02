@@ -17,4 +17,14 @@ All of the chapters for the lab have already been published.
    - Click on any specific file within the repo.
    - Click the **three dots (...)** icon in the top right of the file view.
    - Select **Open in github.dev** from the dropdown menu.
+4. Set up a codespace and install the Quarto extension:
+  - Click the blue GitHub button in the bottom left 
+  - Select "Continue Working in New Codespace..."
+  - Click on the icon with four squares in the left sidebar, type in "Quarto", and click install
+5. Once you are in a codespace with Quarto installed,
+  - click the file icon in the left sidebar 
+  - Select one of the .qmd files
+  - Press Cmd+Shift+K on Mac or Ctrl+Shift+K on Windows or Linux
+
+Now you can edit 
 
