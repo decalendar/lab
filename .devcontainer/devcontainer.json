@@ -1,0 +1,37 @@
+{
+  "name": "Quarto Codespaces",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+      "version": "latest"
+      }
+  },
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "python3 -m pip install -r requirements.txt",
+  "postAttachCommand": {
+   "server": "quarto preview hello.qmd --output-dir _page --no-browser --port 8000"
+  },
+  "portsAttributes": {
+    "8000": {
+      "label": "Quarto Preview",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles" : [
+        "hello.qmd"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "quarto.quarto"
+      ]
+    }
+  },
+
+  "forwardPorts": [8000]
+}
