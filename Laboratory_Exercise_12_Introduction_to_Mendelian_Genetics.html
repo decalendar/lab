@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>11&nbsp; Introduction to Mendelian Genetics – Introduction to Human Biology Laboratory Workbook</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Laboratory_Exercise_11_Mendelian_Genetics_in_Corn_and_Chi_Square_Testing.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-668fe8ca5af0167d817f41a0f4505a59.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-8dbe0f6f28424e2c1e416749e7bcca5c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-668fe8ca5af0167d817f41a0f4505a59.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Laboratory_Exercise_12_Introduction_to_Mendelian_Genetics.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Introduction to Mendelian Genetics</strong></span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Introduction to Human Biology Laboratory Workbook</a> 
+        <div class="sidebar-tools-main">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Introduction-to-Human-Biology-Laboratory-Workbook.pdf">
+              <i class="bi bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Introduction-to-Human-Biology-Laboratory-Workbook.epub">
+              <i class="bi bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="./Introduction-to-Human-Biology-Laboratory-Workbook.docx">
+              <i class="bi bi-file-word pe-1"></i>
+            Download Docx
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Preface</strong></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./toc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Table of Contents</strong></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Front_Matter_1_Scientific_Writing,_Citations,_and_Using_Credible_Sources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Scientific Writing, Citations, and Using Credible Sources</strong></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Front_Matter_2_PRE-LAB_PREPARATION_AND_RESPONSIBLE_USE_OF_AI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><strong>Pre-Lab Preparation and Responsible Use of AI</strong></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_01_Metrics_and_Measurements_Safety_Dundalk_Version.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title"><strong>Laboratory Safety and Measurement</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_02_Use_of_the_Microscope.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title"><strong>Use of the Microscope</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_03_Molecules_Water_and_pH.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title"><strong>Molecules, Water, and pH</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_04_Chemical_Composition_of_Cells_VM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><strong>Chemical Composition of Cells</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_04_Take_Home_Molecular_Structure_of_Biological_Macromolecules.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title"><strong>Molecular Structure of Biological Molecules</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_05_Diffusion,_Osmosis_and_the_Cell.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title"><strong>Molecular Movement in the Cells and Across Cell Membranes</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_06_Enzyme_activity_lab_Turnip_peroxidase_Vernier_modified_Dundalk.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title"><strong>Enzyme Activity: Turnip Peroxidase</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_08_Respiration_and_Yeast_Fermentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title"><strong>Respiration and Yeast Fermentation</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_09_Photosynthesis_Respiration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title"><strong>Photosynthesis and Respiration</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_11_Mendelian_Genetics_in_Corn_and_Chi_Square_Testing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><strong>Mendelian Genetics in Corn and Chi-Square Testing</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_12_Introduction_to_Mendelian_Genetics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Introduction to Mendelian Genetics</strong></span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">11.1</span> <strong>Introduction</strong></a></li>
+  <li><a href="#pre-lab-activity-12.1-questions-and-definitions" id="toc-pre-lab-activity-12.1-questions-and-definitions" class="nav-link" data-scroll-target="#pre-lab-activity-12.1-questions-and-definitions"><span class="header-section-number">11.2</span> <strong>Pre-Lab Activity 12.1: Questions and Definitions</strong></a></li>
+  <li><a href="#monohybrid-cross-problems-using-a-punnett-square" id="toc-monohybrid-cross-problems-using-a-punnett-square" class="nav-link" data-scroll-target="#monohybrid-cross-problems-using-a-punnett-square"><span class="header-section-number">11.3</span> <strong>Monohybrid Cross Problems Using a Punnett Square</strong></a></li>
+  <li><a href="#extensions-of-monohybrid-crosses" id="toc-extensions-of-monohybrid-crosses" class="nav-link" data-scroll-target="#extensions-of-monohybrid-crosses"><span class="header-section-number">11.4</span> <strong>Extensions of Monohybrid Crosses</strong></a>
+  <ul class="collapse">
+  <li><a href="#monohybrid-crosses-with-codominance" id="toc-monohybrid-crosses-with-codominance" class="nav-link" data-scroll-target="#monohybrid-crosses-with-codominance"><span class="header-section-number">11.4.1</span> <strong>Monohybrid Crosses with Codominance</strong></a></li>
+  <li><a href="#monohybrid-crosses-with-sex-linkage" id="toc-monohybrid-crosses-with-sex-linkage" class="nav-link" data-scroll-target="#monohybrid-crosses-with-sex-linkage"><span class="header-section-number">11.4.2</span> <strong>Monohybrid Crosses with Sex Linkage</strong></a></li>
+  <li><a href="#monohybrid-crosses-with-incomplete-dominance" id="toc-monohybrid-crosses-with-incomplete-dominance" class="nav-link" data-scroll-target="#monohybrid-crosses-with-incomplete-dominance"><span class="header-section-number">11.4.3</span> <strong>Monohybrid Crosses with Incomplete Dominance</strong></a></li>
+  <li><a href="#comparative-summary" id="toc-comparative-summary" class="nav-link" data-scroll-target="#comparative-summary"><span class="header-section-number">11.4.4</span> <strong>Comparative Summary</strong></a></li>
+  </ul></li>
+  <li><a href="#dihybrid-crosses" id="toc-dihybrid-crosses" class="nav-link" data-scroll-target="#dihybrid-crosses"><span class="header-section-number">11.5</span> <strong>Dihybrid Crosses</strong></a></li>
+  <li><a href="#key-terms-glossary" id="toc-key-terms-glossary" class="nav-link" data-scroll-target="#key-terms-glossary"><span class="header-section-number">11.6</span> <strong>Key Terms / Glossary</strong></a></li>
+  <li><a href="#post-lab-analysis-questions" id="toc-post-lab-analysis-questions" class="nav-link" data-scroll-target="#post-lab-analysis-questions"><span class="header-section-number">11.7</span> <strong>Post-Lab Analysis Questions</strong></a></li>
+  <li><a href="#procedure-overview" id="toc-procedure-overview" class="nav-link" data-scroll-target="#procedure-overview"><span class="header-section-number">11.8</span> <strong>Procedure Overview</strong></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Introduction to Mendelian Genetics</strong></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">11.1</span> <strong>Introduction</strong></h2>
+<p>Gregor Mendel is widely recognized as the <strong>father of modern genetics</strong> because his experiments provided the first clear explanation of how inherited characteristics are transmitted from one generation to the next. Mendel was born in 1822 and grew up on a farm, where he developed an early interest in plants. His later education in mathematics and science, especially at the University of Vienna, helped him apply quantitative reasoning to biological questions.</p>
+<p>Between 1856 and 1865, Mendel conducted controlled breeding experiments using pea plants (<em>Pisum sativum</em>). He selected pea plants because they possessed easily observed traits, reproduced quickly, and could be artificially fertilized under controlled conditions. By tracking characteristics such as seed shape, seed color, flower color, and plant height across generations, he demonstrated that traits are inherited as discrete hereditary units rather than blending together. These findings became the conceptual basis for what are now called genes.</p>
+<p>Mendel presented his results to the Natural History Society of Brno in 1865 and published them in 1866 in a paper titled <em>Experiments in Plant Hybridization</em>. Despite the importance of his conclusions, the work attracted little attention at the time. Historians and science references note that his paper circulated only narrowly and that many contemporary scientists did not appreciate the significance of his mathematical treatment of inheritance. Mendel’s work was not widely recognized until about 1900, when other scientists rediscovered similar inheritance patterns and connected them to his earlier publication.</p>
+<p>The modern language of genetics emerged after Mendel, but the principles he discovered remain foundational. A <strong>gene</strong> is a unit of heredity, and a <strong>trait</strong> is a heritable characteristic influenced by one or more genes. Alternative versions of a gene are called <strong>alleles</strong>, and the specific physical position of a gene on a chromosome is its <strong>locus</strong>. Diploid organisms inherit two alleles for most genes, one from each parent. When both alleles are the same, the organism is <strong>homozygous</strong> for that gene; when the alleles differ, the organism is <strong>heterozygous</strong>.</p>
+<p>The outward expression of a genetic characteristic is the <strong>phenotype</strong>, whereas the underlying allele combination is the <strong>genotype</strong>. In classical Mendelian inheritance, a <strong>dominant</strong> allele is expressed in the phenotype whenever it is present, while a <strong>recessive</strong> allele is expressed only when two recessive copies are inherited. However, not all inheritance patterns follow simple dominance. In <strong>incomplete dominance</strong>, the heterozygous phenotype is intermediate between the two homozygous phenotypes. In <strong>codominance</strong>, both alleles are fully expressed in the heterozygote. In <strong>sex-linked inheritance</strong>, the gene responsible for a trait is located on a sex chromosome, most often the X chromosome.</p>
+<p>In this laboratory, students will first analyze a <strong>monohybrid cross</strong>, which follows the inheritance of a single trait. Monohybrid crosses are especially useful for examining complete dominance, incomplete dominance, codominance, and sex-linked traits. Students will then examine a <strong>dihybrid cross</strong>, which tracks two traits simultaneously and illustrates how genes may assort independently during gamete formation. Together, these exercises introduce the predictive framework of Mendelian genetics.</p>
+<p><strong>Objectives</strong></p>
+<p>Upon completion of this laboratory exercise, students should be able to:</p>
+<ol type="1">
+<li><p>Describe the historical significance of Gregor Mendel’s work in establishing the foundations of modern genetics.</p></li>
+<li><p>Define essential genetic terms, including <strong>gene, trait, locus, allele, genotype, phenotype, homozygous, heterozygous, dominant,</strong> and <strong>recessive</strong>.</p></li>
+<li><p>Distinguish between <strong>monohybrid</strong> and <strong>dihybrid</strong> crosses and explain the biological questions each type of cross addresses.</p></li>
+<li><p>Predict genotypic and phenotypic ratios from monohybrid crosses involving complete dominance.</p></li>
+<li><p>Interpret inheritance patterns that deviate from simple dominance, including <strong>codominance, incomplete dominance,</strong> and <strong>sex-linked inheritance</strong>.</p></li>
+<li><p>Use Punnett square analysis to evaluate expected outcomes of genetic crosses.</p></li>
+<li><p>Relate observed inheritance patterns to Mendel’s principles of segregation and independent assortment.</p></li>
+</ol>
+<p><strong>Topics Covered in This Laboratory</strong></p>
+<ul>
+<li><p>Monohybrid crosses with complete dominance</p></li>
+<li><p>Monohybrid crosses with codominance</p></li>
+<li><p>Monohybrid crosses with sex linkage</p></li>
+<li><p>Monohybrid crosses with incomplete dominance</p></li>
+<li><p>Dihybrid crosses</p></li>
+</ul>
+</section>
+<section id="pre-lab-activity-12.1-questions-and-definitions" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="pre-lab-activity-12.1-questions-and-definitions"><span class="header-section-number">11.2</span> <strong>Pre-Lab Activity 12.1: Questions and Definitions</strong></h2>
+<ol type="1">
+<li><p>Why is Gregor Mendel considered the founder of modern genetics?</p></li>
+<li><p>Why were pea plants especially useful for Mendel’s studies of inheritance?</p></li>
+<li><p>Define the terms <strong>gene</strong>, <strong>trait</strong>, <strong>allele</strong>, and <strong>locus</strong> in your own words.</p></li>
+<li><p>What is the difference between <strong>genotype</strong> and <strong>phenotype</strong>?</p></li>
+<li><p>What is the difference between a <strong>homozygous</strong> individual and a <strong>heterozygous</strong> individual?</p></li>
+<li><p>In a trait showing complete dominance, how does the phenotype of a heterozygote compare with that of a homozygous dominant individual?</p></li>
+<li><p>What is the difference between <strong>complete dominance</strong>, <strong>incomplete dominance</strong>, and <strong>codominance</strong>?</p></li>
+<li><p>What distinguishes a <strong>monohybrid cross</strong> from a <strong>dihybrid cross</strong>?</p></li>
+<li><p>Why are sex-linked traits often inherited differently from autosomal traits?</p></li>
+<li><p>If two heterozygous individuals are crossed for a single trait showing complete dominance, what genotypic and phenotypic ratios would you predict?</p></li>
+</ol>
+</section>
+<section id="monohybrid-cross-problems-using-a-punnett-square" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="monohybrid-cross-problems-using-a-punnett-square"><span class="header-section-number">11.3</span> <strong>Monohybrid Cross Problems Using a Punnett Square</strong></h2>
+<p>A <strong>monohybrid cross</strong> follows the inheritance of a <strong>single gene or trait</strong>. In a Punnett square, the possible <strong>gametes</strong> from one parent are written across the top, and the possible gametes from the other parent are written along the side. Each box inside the square represents one possible offspring genotype. This allows students to predict both <strong>genotypic ratios</strong> and <strong>phenotypic ratios</strong> for a cross.</p>
+<p>For a trait that follows <strong>complete dominance</strong>, the <strong>dominant allele</strong> is expressed whenever it is present, while the <strong>recessive allele</strong> is expressed only when an individual has two recessive copies.</p>
+<p><strong>Problem 1: Worked Example: Homozygous Dominant × Homozygous Recessive</strong></p>
+<p>In pea plants, <strong>purple flowers (P)</strong> are dominant to <strong>white flowers (p*)</strong>. Cross a <strong>homozygous dominant purple-flowered plant</strong> with a <strong>homozygous recessive white-flowered plant</strong>.</p>
+<ul>
+<li><p>Parent 1 genotype = <strong>PP</strong></p></li>
+<li><p>Parent 2 genotype = <strong>p*p*</strong></p></li>
+</ul>
+<p><strong>Step 1. Determine the gametes from each parent</strong></p>
+<p>Because each gamete receives only <strong>one allele</strong> for the gene, the <strong>PP</strong> parent can produce only <strong>P</strong> gametes, and the <strong>p*p*</strong> parent can produce only <strong>p*</strong> gametes. This follows Mendel’s principle of segregation.</p>
+<ul>
+<li><p>Gametes from <strong>PP</strong>: <strong>_____, _____</strong></p></li>
+<li><p>Gametes from <strong>p*p*</strong>: <strong>_____, _____</strong></p></li>
+</ul>
+<p><strong>Step 2. Set up the Punnett square</strong></p>
+<p><strong>Fill in the outer boxes below</strong></p>
+<hr>
+<hr>
+<p><strong>Step 3. Identify the offspring genotypes</strong></p>
+<p>All four boxes contain the genotype <strong>Pp*</strong>.</p>
+<ul>
+<li><p>Offspring genotypes: <strong>100% Pp*</strong></p></li>
+<li><p>Genotypic ratio: <strong>0 PP : 4 Pp* : 0 p*p*</strong></p></li>
+<li><p>Simplified genotypic ratio: <strong>100% heterozygous</strong></p></li>
+</ul>
+<p><strong>Step 4. Identify the offspring phenotypes</strong></p>
+<p>Because <strong>P</strong> is dominant, every offspring with genotype <strong>Pp*</strong> will have <strong>purple flowers</strong>. In complete dominance, a heterozygote shows the dominant phenotype.</p>
+<ul>
+<li><p>Offspring phenotypes: <strong>100% purple flowers</strong></p></li>
+<li><p>Phenotypic ratio: <strong>4 purple : 0 white</strong></p></li>
+</ul>
+<p><strong>Conclusion</strong></p>
+<p>A cross between a <strong>homozygous dominant</strong> parent and a <strong>homozygous recessive</strong> parent produces offspring that are:</p>
+<ul>
+<li><p><strong>100% heterozygous</strong></p></li>
+<li><p><strong>100% dominant phenotype</strong></p></li>
+</ul>
+<p>This is a useful first example because every offspring has the same genotype and the same phenotype.</p>
+<p><strong>How to Solve Any Monohybrid Cross</strong></p>
+<p>You can use the following method for every problem:</p>
+<ol type="1">
+<li><p><strong>Write the genotypes of both parents.</strong></p></li>
+<li><p><strong>Determine the possible gametes</strong> from each parent. Each gamete carries only one allele for the trait.</p></li>
+<li><p><strong>Draw a 2 × 2 Punnett square</strong> for a monohybrid cross.</p></li>
+</ol>
+<hr>
+<hr>
+<ol start="4" type="1">
+<li><p>Place one <strong>allele</strong> from each parent in one of the outside boxes.</p></li>
+<li><p><strong>Fill in the four internal boxes</strong> by combining one allele from each parent.</p></li>
+<li><p><strong>Count the genotypes</strong> to determine the <strong>genotypic ratio</strong>.</p></li>
+<li><p><strong>Use dominance rules</strong> to determine the <strong>phenotypic ratio</strong>.</p></li>
+</ol>
+<p><strong>Practice Problems for you to complete.</strong> Below are <strong>five additional monohybrid cross problems</strong> for you to solve.</p>
+<p><strong>Problem 1: Homozygous Dominant × Heterozygous</strong></p>
+<p>In pea plants, <strong>tall (T)</strong> is dominant to <strong>short (t*)</strong>. Cross a <strong>homozygous dominant tall plant</strong> with a <strong>heterozygous tall plant</strong>.</p>
+<ul>
+<li><p>Parent 1 genotype = <strong>TT</strong></p></li>
+<li><p>Parent 2 genotype = <strong>Tt*</strong></p></li>
+</ul>
+<p><strong>You must determine:</strong></p>
+<ul>
+<li><p>The gametes from each parent</p></li>
+<li><p>The Punnett square</p></li>
+<li><p>The offspring genotypes</p></li>
+<li><p>The genotypic ratio</p></li>
+<li><p>The phenotypic ratio</p></li>
+</ul>
+<p><strong>Problem 2: Heterozygous × Heterozygous</strong></p>
+<p>In pea plants, <strong>yellow seeds (Y)</strong> are dominant to <strong>green seeds (y*)</strong>. Cross two <strong>heterozygous yellow-seeded plants</strong>.</p>
+<ul>
+<li><p>Parent 1 genotype = <strong>Yy*</strong></p></li>
+<li><p>Parent 2 genotype = <strong>Yy*</strong></p></li>
+</ul>
+<p><strong>You must determine:</strong></p>
+<ul>
+<li><p>The Punnett square</p></li>
+<li><p>The genotypic ratio</p></li>
+<li><p>The phenotypic ratio</p></li>
+</ul>
+<p>A heterozygote × heterozygote monohybrid cross is the classic cross that produces a <strong>1:2:1 genotypic ratio</strong> and a <strong>3:1 phenotypic ratio</strong> under complete dominance.</p>
+<p><strong>Problem 3: Heterozygous × Homozygous Recessive</strong></p>
+<p>In pea plants, <strong>round seeds (R)</strong> are dominant to <strong>wrinkled seeds (r*)</strong>. Cross a <strong>heterozygous round-seeded plant</strong> with a <strong>homozygous recessive wrinkled-seeded plant</strong>.</p>
+<ul>
+<li><p>Parent 1 genotype = <strong>Rr*</strong></p></li>
+<li><p>Parent 2 genotype = <strong>r*r*</strong></p></li>
+</ul>
+<p><strong>Students should determine:</strong></p>
+<ul>
+<li><p>The gametes from each parent</p></li>
+<li><p>The Punnett square</p></li>
+<li><p>The genotypic ratio</p></li>
+<li><p>The phenotypic ratio</p></li>
+</ul>
+<p><strong>Problem 4: Homozygous Recessive × Homozygous Recessive</strong></p>
+<p>In pea plants, <strong>green pods (g*)</strong> are recessive to <strong>yellow pods (G)</strong>. Cross two <strong>homozygous recessive green-podded plants</strong>.</p>
+<ul>
+<li><p>Parent 1 genotype = <strong>g*g*</strong></p></li>
+<li><p>Parent 2 genotype = <strong>g*g*</strong></p></li>
+</ul>
+<p><strong>You must determine:</strong></p>
+<ul>
+<li><p>The Punnett square</p></li>
+<li><p>The genotype of all offspring</p></li>
+<li><p>The phenotype of all offspring</p></li>
+</ul>
+<p><strong>Problem 5: Test Cross</strong></p>
+<p>In pea plants, <strong>purple flowers (P)</strong> are dominant to <strong>white flowers (p*)</strong>. A purple-flowered plant has the genotype <strong>P_</strong>, meaning the second allele is unknown. To determine whether it is <strong>PP</strong> or <strong>Pp*</strong>, it is crossed with <u>a <strong>white-flowered plant (p*p*)</strong>.</u></p>
+<p><strong>Part A</strong></p>
+<p>Assume the unknown purple-flowered plant is <strong>PP</strong>.</p>
+<ul>
+<li>Cross: <strong>PP × p*p*</strong></li>
+</ul>
+<p><strong>Part B</strong></p>
+<p>Assume the unknown purple-flowered plant is <strong>Pp*</strong>.</p>
+<ul>
+<li>Cross: <strong>Pp* × p*p*</strong></li>
+</ul>
+<p><strong>Students should determine:</strong></p>
+<ul>
+<li><p>The Punnett square for each cross</p></li>
+<li><p>The phenotypic ratio for each cross</p></li>
+<li><p>Which result would indicate that the unknown parent is heterozygous</p></li>
+</ul>
+<p>A <strong>test cross</strong> uses a homozygous recessive parent to help reveal the genotype of an individual showing the dominant phenotype.</p>
+<p><strong>Problem 6.</strong></p>
+<p>In rabbits, <strong>black fur (B)</strong> is dominant to <strong>white fur (b*)</strong>.<br>
+A <strong>black rabbit</strong> is crossed with a <strong>white rabbit</strong>, and <strong>half</strong> of the offspring are black and <strong>half</strong> are white.</p>
+<p><strong>Questions</strong></p>
+<ul>
+<li><p>What must the genotype of the white rabbit be?</p></li>
+<li><p>What must the genotype of the black rabbit be?</p></li>
+<li><p>Draw the Punnett square that explains the results.</p></li>
+</ul>
+<p>A recessive phenotype must always be homozygous recessive in a complete-dominance system.</p>
+<p><strong>Problem 7. Unknown Genotype (Test Cross)</strong></p>
+<p>In pea plants, <strong>purple flowers (P)</strong> are dominant to <strong>white flowers (p*)</strong>.<br>
+A purple-flowered plant has the genotype <strong>P_</strong>, meaning its second allele is unknown. To determine its genotype, it is crossed with a <strong>white-flowered plant (p*p*)</strong>.</p>
+<p><strong>Questions</strong></p>
+<ol type="1">
+<li><p>If the unknown purple-flowered plant is <strong>PP</strong>, what offspring are expected?</p></li>
+<li><p>If the unknown purple-flowered plant is <strong>Pp*</strong>, what offspring are expected?</p></li>
+<li><p>What result would prove that the unknown parent is <strong>heterozygous</strong>?</p></li>
+</ol>
+<p>A <strong>test cross</strong> uses a homozygous recessive individual to identify the genotype of an organism showing the dominant phenotype.</p>
+<p><strong>Problem 8. Reverse Reasoning from Offspring Data</strong></p>
+<p>In a species of flowering plant, <strong>red flowers (R)</strong> are dominant to <strong>white flowers (r*)</strong>.<br>
+Two red-flowered plants are crossed, and the offspring include <strong>75% red-flowered plants</strong> and <strong>25% white-flowered plants</strong>.</p>
+<p><strong>Questions</strong></p>
+<ul>
+<li><p>What are the most likely genotypes of the two parents?</p></li>
+<li><p>Draw the Punnett square for the cross.</p></li>
+<li><p>Why are white-flowered offspring possible even though both parents are red?</p></li>
+</ul>
+<p>Note: A <strong>3:1 phenotypic ratio</strong> is the classic result of a heterozygote × heterozygote monohybrid cross when one allele is completely dominant over the other.</p>
+<p><strong>Problem 9. Predicting Probabilities</strong></p>
+<p>In dogs, <strong>short hair (H)</strong> is dominant to <strong>long hair (h*)</strong>.<br>
+Two heterozygous short-haired dogs are crossed.</p>
+<ul>
+<li><p>Parent 1: <strong>Hh*</strong></p></li>
+<li><p>Parent 2: <strong>Hh*</strong></p></li>
+</ul>
+<p><strong>Questions</strong></p>
+<ul>
+<li><p>What is the probability that an offspring will be <strong>long-haired</strong>?</p></li>
+<li><p>What is the probability that an offspring will be <strong>heterozygous</strong>?</p></li>
+<li><p>If this cross produces <strong>four puppies</strong>, how many would you <em>expect</em> to be short-haired?</p></li>
+</ul>
+<p>Remember: Punnett squares predict <strong>expected proportions</strong>, not guaranteed outcomes for a small number of offspring.</p>
+<p><strong>Problem 10. Multi-Part Inference Problem</strong></p>
+<p>In corn plants, <strong>smooth kernels (S)</strong> are dominant to <strong>wrinkled kernels (s*)</strong>.<br>
+A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspring, <strong>all are smooth</strong>.</p>
+<p><strong>Questions</strong></p>
+<ol type="1">
+<li><p>What is the genotype of the wrinkled-kernel plant?</p></li>
+<li><p>What are the two possible genotypes of the smooth-kernel parent before the cross is analyzed?</p></li>
+<li><p>Based on the fact that <strong>all offspring are smooth</strong>, what is the most likely genotype of the smooth-kernel parent?</p></li>
+<li><p>Draw the Punnett square that supports your answer.</p></li>
+</ol>
+<p><strong><br>
+</strong></p>
+</section>
+<section id="extensions-of-monohybrid-crosses" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="extensions-of-monohybrid-crosses"><span class="header-section-number">11.4</span> <strong>Extensions of Monohybrid Crosses</strong></h2>
+<p>Not all inherited traits follow the simple dominant–recessive pattern first described by Mendel in pea plants. Although Mendel’s work established the basic principles of segregation and inheritance, later studies demonstrated that some traits exhibit alternative inheritance patterns, including codominance, incomplete dominance, and sex-linked inheritance. These patterns can still be analyzed using the same general approach as a standard monohybrid cross, but the relationship between genotype and phenotype differs from that seen in complete dominance. <a href="http://www.mendelianum.cz/images/files/Mendel-paper-1866-english.pdf">[Experiment...gor Mendel]</a>, <a href="https://en.wikipedia.org/wiki/Experiments_on_Plant_Hybridization">[en.wikipedia.org]</a></p>
+<p>In the following sections, you will examine three important extensions of Mendelian inheritance. For each pattern, you should determine the parental genotypes, identify the possible gametes, construct a Punnett square, and then predict both the genotypic and phenotypic outcomes of the cross. Although the Punnett square method remains the same, interpretation of the offspring changes depending on the dominance relationship between the alleles or on whether the gene is carried on an autosome or a sex chromosome.</p>
+<section id="monohybrid-crosses-with-codominance" class="level3" data-number="11.4.1">
+<h3 data-number="11.4.1" class="anchored" data-anchor-id="monohybrid-crosses-with-codominance"><span class="header-section-number">11.4.1</span> <strong>Monohybrid Crosses with Codominance</strong></h3>
+<p>In codominance, both alleles in a heterozygous individual are fully and distinctly expressed in the phenotype; one allele does not mask the other. A classic biological example is the ABO blood group system, in which the <strong>Iᴬ</strong> and <strong>Iᴮ</strong> alleles are <strong>codominant</strong> and are both expressed in individuals with genotype <strong>IᴬIᴮ,</strong> producing blood type <strong>AB</strong>. Allele <strong>i</strong>, when it appears, is recessive and is masked by either <strong>I<sup>A</sup></strong> or <strong>I<sup>B</sup></strong>. In laboratory exercises, codominance is often illustrated with coat-color traits in animals, such as red and white coat alleles in cattle, where the heterozygote displays both red and white hairs.</p>
+<p><strong>Solved Example: Codominance</strong></p>
+<p>In cattle, red coat color (<strong>Cᴿ</strong>) and white coat color (<strong>Cᵂ</strong>) are codominant. A heterozygous animal with genotype <strong>CᴿCᵂ</strong> has a roan coat, meaning that both red and white hairs are visible. Cross two roan cattle.</p>
+<p><strong>Parental genotypes:</strong></p>
+<ul>
+<li><p><strong>Parent 1: CᴿCᵂ</strong></p></li>
+<li><p><strong>Parent 2: CᴿCᵂ</strong></p></li>
+</ul>
+<p><strong>Possible gametes:</strong></p>
+<ul>
+<li><p>Each parent produces Cᴿ and Cᵂ gametes.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></th>
+<th style="text-align: left;"><strong>Cᴿ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></th>
+<th style="text-align: left;"><strong>Cᵂ</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Cᴿ&nbsp;&nbsp;</strong></td>
+<td style="text-align: left;"><strong>CᴿCᴿ&nbsp;&nbsp;&nbsp;</strong></td>
+<td style="text-align: left;"><strong>CᴿCᵂ</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Cᵂ&nbsp;&nbsp;</strong></td>
+<td style="text-align: left;"><strong>CᴿCᵂ&nbsp;&nbsp;&nbsp;</strong></td>
+<td style="text-align: left;"><strong>CᵂCᵂ</strong></td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<p><strong>Offspring genotypes:</strong></p>
+<ul>
+<li><p><strong>1 CᴿCᴿ</strong></p></li>
+<li><p><strong>2 CᴿCᵂ</strong></p></li>
+<li><p><strong>1 CᵂCᵂ</strong></p></li>
+</ul>
+<p><strong>Genotypic ratio: 1 : 2 : 1</strong></p>
+<p><strong>Offspring phenotypes:</strong></p>
+<ul>
+<li><p><strong>CᴿCᴿ = red</strong></p></li>
+<li><p><strong>CᴿCᵂ = roan</strong></p></li>
+<li><p><strong>CᵂCᵂ = white</strong></p></li>
+</ul>
+<p><strong>Phenotypic ratio: 1 red : 2 roan : 1 white</strong></p>
+<p>This example illustrates that, in codominance, the heterozygote has a phenotype in which both alleles are visibly expressed, rather than one allele masking the other or producing an intermediate blend.</p>
+<p><strong>Practice Questions: Codominance</strong></p>
+<p><strong>Practice</strong></p>
+<ol type="1">
+<li><p>In cattle, red coat color (Cᴿ) and white coat color (Cᵂ) are codominant. Cross a red cow (CᴿCᴿ) with a white cow (CᵂCᵂ). Determine the expected genotypes and phenotypes of the offspring.</p></li>
+<li><p>Cross a roan cow (CᴿCᵂ) with a red cow (CᴿCᴿ). Determine the genotypic ratio and phenotypic ratio of the offspring.</p></li>
+</ol>
+<!-- -->
+<ol start="3" type="1">
+<li><p>In a species of birds, black feathers (Fᴮ) and white feathers (Fᵂ) are codominant, and heterozygotes are speckled.</p>
+<ul>
+<li>Cross two speckled birds. What fraction of the offspring will be black, speckled, and white?</li>
+</ul></li>
+<li><p>A roan bull is crossed with a white cow, producing 9 roan calves and 11 white calves.</p>
+<ul>
+<li><p>What are the most likely parental genotypes, and</p></li>
+<li><p>What phenotypic ratio would be expected from this cross?</p></li>
+</ul></li>
+<li><p>A red calf is produced from one roan parent.</p>
+<ul>
+<li><p>What are the possible genotypes of the other parent?</p></li>
+<li><p>Explain all possible crosses that could produce a red calf.</p></li>
+</ul></li>
+<li><p>Two animals with the same phenotype are crossed in a codominant system, and all three phenotypes appear among the offspring. What must the parental phenotype and genotype be?</p></li>
+<li><p>In a codominant system, why does a 1 : 2 : 1 phenotypic ratio occur in a heterozygote × heterozygote cross rather than the 3 : 1 phenotypic ratio seen in complete dominance?</p></li>
+</ol>
+</section>
+<section id="monohybrid-crosses-with-sex-linkage" class="level3" data-number="11.4.2">
+<h3 data-number="11.4.2" class="anchored" data-anchor-id="monohybrid-crosses-with-sex-linkage"><span class="header-section-number">11.4.2</span> <strong>Monohybrid Crosses with Sex Linkage</strong></h3>
+<p>A sex-linked trait is determined by a gene located on a sex chromosome, most commonly the X chromosome. In humans and many other organisms, females typically have two X chromosomes (XX) and males have one X and one Y chromosome (XY). Because males have only one X chromosome, they possess only a single copy of most X-linked genes and will express a recessive X-linked allele whenever it is present. Females generally must inherit two recessive alleles to express a recessive X-linked trait. As a result, X-linked recessive conditions often occur more frequently in males than in females.</p>
+<p>A common instructional example is red–green color blindness, which is usually treated as an X-linked recessive trait. In this notation, Xᴺ represents the normal-vision allele and Xⁿ represents the color-blind allele; the Y chromosome does not carry a corresponding allele for this trait.</p>
+<p><strong>Solved Example: Sex Linkage</strong></p>
+<p>Color blindness is X-linked recessive. Cross a carrier female with a normal male.</p>
+<p><strong>Parental genotypes:</strong></p>
+<ul>
+<li><p><strong>Female: XᴺXⁿ</strong></p></li>
+<li><p><strong>Male: XᴺY</strong></p></li>
+</ul>
+<p><strong>Possible gametes:</strong> Write down the gametes in the spaces below</p>
+<ul>
+<li><p><strong>Female gametes: ____, _____</strong></p></li>
+<li><p><strong>Male gametes: _____, ____</strong></p></li>
+</ul>
+<p>Complete the Punnett Square below.</p>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></p>
+<p><strong>Offspring genotypes and phenotypes:</strong></p>
+<ul>
+<li><p><strong>XᴺXᴺ = normal female</strong></p></li>
+<li><p><strong>XᴺXⁿ = carrier female</strong></p></li>
+<li><p><strong>XᴺY = normal male</strong></p></li>
+<li><p><strong>XⁿY = color-blind male</strong></p></li>
+</ul>
+<p><strong>Predicted outcomes:</strong></p>
+<ul>
+<li><p><strong>Daughters: _____% normal, _____% carriers</strong></p></li>
+<li><p><strong>Sons: _____% normal, _____% color-blind</strong></p></li>
+</ul>
+<p>This cross demonstrates why X-linked recessive traits are commonly observed in males: a male needs only one recessive allele on his single X chromosome in order to express the phenotype.</p>
+<p><strong>Practice Questions: Sex Linkage</strong></p>
+<p><strong>Simple Practice</strong></p>
+<ol type="1">
+<li><strong>Color blindness is X-linked recessive. Cross a color-blind male (XⁿY) with a normal homozygous female (XᴺXᴺ). What are the genotypes and phenotypes of all offspring?</strong></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="2" type="1">
+<li><strong>Cross a carrier female (XᴺXⁿ) with a color-blind male (XⁿY).</strong> What fraction of daughters will be color-blind, and what fraction of sons will be color-blind?</li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="3" type="1">
+<li><strong>Hemophilia is an X-linked recessive trait. A carrier mother and a normal father have children. What is the probability that a son will have hemophilia? What is the probability that a daughter will be a carrier?</strong></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="4" type="1">
+<li><strong>A woman has normal vision, but her father was color-blind. She has children with a normal-vision man. What must the woman’s genotype be, and what is the probability that one of their sons will be color-blind?</strong> <a href="https://en.wikipedia.org/wiki/Experiments_on_Plant_Hybridization" class="uri">https://en.wikipedia.org/wiki/Experiments_on_Plant_Hybridization</a></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="5" type="1">
+<li><strong>A normal-vision father and a normal-vision mother have a color-blind son. What must the mother’s genotype be? Could a daughter in this family be color-blind? Explain your answer.</strong></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="6" type="1">
+<li><strong>A color-blind female is crossed with a normal male. Determine the genotypes and phenotypes of all daughters and all sons. Explain how this cross differs from an autosomal recessive cross.</strong></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="7" type="1">
+<li><strong>Why is the notation for sex-linked crosses different from that used in autosomal monohybrid crosses? Relate your answer to the fact that the Y chromosome often lacks a corresponding allele for many X-linked genes.</strong></li>
+</ol>
+</section>
+<section id="monohybrid-crosses-with-incomplete-dominance" class="level3" data-number="11.4.3">
+<h3 data-number="11.4.3" class="anchored" data-anchor-id="monohybrid-crosses-with-incomplete-dominance"><span class="header-section-number">11.4.3</span> <strong>Monohybrid Crosses with Incomplete Dominance</strong></h3>
+<p>In incomplete dominance, neither allele is completely dominant over the other, and the heterozygote displays an intermediate phenotype between the two homozygotes. This pattern differs from codominance because the heterozygote does not show both traits distinctly; instead, it shows a phenotype that appears blended or intermediate. A classic example is snapdragon flower color, in which red-flowered plants and white-flowered plants produce pink-flowered heterozygous offspring.</p>
+<p><strong>A commonly used notation for this trait is:</strong></p>
+<ul>
+<li><p><strong>CᴿCᴿ = red</strong></p></li>
+<li><p><strong>CᵂCᵂ = white</strong></p></li>
+<li><p><strong>CᴿCᵂ = pink</strong></p></li>
+</ul>
+<p><strong>Solved Example: Incomplete Dominance</strong></p>
+<p><strong>In snapdragons, flower color shows incomplete dominance. Cross two pink flowers.</strong></p>
+<p><strong>Parental genotypes:</strong></p>
+<ul>
+<li><p><strong>Parent 1: CᴿCᵂ</strong></p></li>
+<li><p><strong>Parent 2: CᴿCᵂ</strong></p></li>
+</ul>
+<p><strong>Possible gametes:</strong></p>
+<ul>
+<li><strong>Each parent produces ______ and ______ gametes.</strong></li>
+</ul>
+<p>Complete the Punnett Square below.</p>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<p><strong>Offspring genotypes:</strong></p>
+<ul>
+<li><p><strong>____ CᴿCᴿ</strong></p></li>
+<li><p><strong>____ CᴿCᵂ</strong></p></li>
+<li><p><strong>____ CᵂCᵂ</strong></p></li>
+</ul>
+<p><strong>Offspring phenotypes:</strong></p>
+<ul>
+<li><p><strong>CᴿCᴿ = red</strong></p></li>
+<li><p><strong>CᴿCᵂ = pink</strong></p></li>
+<li><p><strong>CᵂCᵂ = white</strong></p></li>
+</ul>
+<p><strong>Genotypic ratio: 1 : 2 : 1</strong></p>
+<p><strong>Phenotypic ratio: 1 red : 2 pink : 1 white</strong></p>
+<p>This example shows that in incomplete dominance the heterozygote has an intermediate phenotype, and therefore the phenotypic ratio matches the genotypic ratio in a heterozygote × heterozygote cross.</p>
+<p><strong>Practice Questions: Incomplete Dominance</strong></p>
+<ol type="1">
+<li><strong>In snapdragons, cross a red flower (CᴿCᴿ) with a white flower (CᵂCᵂ). What genotype and phenotype will all offspring have?</strong></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="2" type="1">
+<li><strong>Cross a pink flower (CᴿCᵂ) with a white flower (CᵂCᵂ). Determine the expected offspring genotypes and phenotypes.</strong></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="3" type="1">
+<li><strong>In a species of fish, blue scales (BᴮBᴮ) and yellow scales (BʸBʸ) show incomplete dominance, and heterozygotes are green. Cross two green fish and determine the expected genotypic and phenotypic ratios.</strong></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="4" type="1">
+<li><strong>A pink snapdragon is crossed with a red snapdragon. What fraction of the offspring will be pink, and what fraction will be red?</strong></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="5" type="1">
+<li><strong>Two flowers produce offspring in the ratio 1 red : 2 pink : 1 white. What were the parental genotypes, and how does the ratio support your answer?</strong></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="6" type="1">
+<li><strong>A breeder crosses two flowers and observes 50% pink and 50% white offspring, with no red offspring. What were the parental genotypes? Draw the Punnett square to support your answer.</strong></li>
+</ol>
+<hr>
+<p><strong>&nbsp;&nbsp;</strong><br>
+———————– ———————– ———————–</p>
+<ol start="7" type="1">
+<li><strong>Explain why incomplete dominance can appear similar to “blending inheritance” at first glance yet still follows predictable Mendelian segregation patterns.</strong></li>
+</ol>
+</section>
+<section id="comparative-summary" class="level3" data-number="11.4.4">
+<h3 data-number="11.4.4" class="anchored" data-anchor-id="comparative-summary"><span class="header-section-number">11.4.4</span> <strong>Comparative Summary</strong></h3>
+<p>These three types of monohybrid crosses illustrate that not all single-gene traits follow complete dominance. In codominance, both alleles are fully expressed in the heterozygote. In incomplete dominance, neither allele is fully dominant, and the heterozygote has an intermediate phenotype. In sex-linked inheritance, the pattern of transmission depends on whether the gene is located on a sex chromosome and whether the offspring is male or female. Despite these differences, each pattern can still be analyzed using the same stepwise process of identifying parental genotypes, determining gametes, constructing a Punnett square, and interpreting the resulting genotypic and phenotypic ratios., <a href="https://courses.lumenlearning.com/suny-oneonta-osbiology2e-1/chapter/characteristics-and-traits/" class="uri">https://courses.lumenlearning.com/suny-oneonta-osbiology2e-1/chapter/characteristics-and-traits/</a></p>
+</section>
+</section>
+<section id="dihybrid-crosses" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="dihybrid-crosses"><span class="header-section-number">11.5</span> <strong>Dihybrid Crosses</strong></h2>
+<p>A <strong>dihybrid cross</strong> is a genetic cross that examines the inheritance of <strong>two different traits (two genes) simultaneously</strong>. While a monohybrid cross follows one trait, a dihybrid cross allows us to observe how alleles of different genes are inherited together and whether they assort independently. This concept reflects <strong>Mendel’s principle of independent assortment</strong>, which states that alleles of different genes are distributed independently into gametes (provided the genes are not linked).</p>
+<p>In a dihybrid cross, each parent contributes <strong>two alleles for each of two genes</strong>, and each gamete receives <strong>one allele from each gene</strong>. As a result, more combinations of gametes are possible compared to a monohybrid cross.</p>
+<p><strong>Using FOIL to Determine Gametes</strong></p>
+<p>To solve dihybrid crosses efficiently, students can use the <strong>FOIL method</strong>, a technique adapted from algebra:</p>
+<ul>
+<li><p><strong>F</strong>irst</p></li>
+<li><p><strong>O</strong>uter</p></li>
+<li><p><strong>I</strong>nner</p></li>
+<li><p><strong>L</strong>ast</p></li>
+</ul>
+<p>This method helps determine all possible gamete combinations from a heterozygous individual.</p>
+<p><strong>Example:</strong></p>
+<p>For a genotype <strong>AaBb</strong>, apply FOIL:</p>
+<ul>
+<li><p>First: <strong>A B</strong> → AB</p></li>
+<li><p>Outer: <strong>A b</strong> → Ab*</p></li>
+<li><p>Inner: <strong>a B</strong> → a*B</p></li>
+<li><p>Last: <strong>a b</strong> → a*b*</p></li>
+</ul>
+<p>Thus, this individual produces <strong>four types of gametes</strong>:</p>
+<ul>
+<li><strong>AB, Ab*, a*B, a*b*</strong></li>
+</ul>
+<p><strong>Solved Example: Dihybrid Cross</strong></p>
+<p><strong>Problem</strong></p>
+<p>In pea plants:</p>
+<ul>
+<li><p><strong>Seed shape:</strong> Round (R) is dominant to wrinkled (r)</p></li>
+<li><p><strong>Seed color:</strong> Yellow (Y) is dominant to green (y)</p></li>
+</ul>
+<p>Cross two plants that are <strong>heterozygous for both traits</strong>:</p>
+<ul>
+<li><p>Parent 1: <strong>Rr*Yy*</strong></p></li>
+<li><p>Parent 2: <strong>Rr*Yy*</strong></p></li>
+</ul>
+<p><strong>Step 1: Determine gametes using FOIL</strong></p>
+<p>Each parent produces:</p>
+<ul>
+<li><strong>RY, Ry*, r*Y, r*y*</strong></li>
+</ul>
+<p><strong>Step 2: Set up a 4 × 4 Punnett square</strong></p>
+<p>Complete the following table.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">RY</th>
+<th style="text-align: center;">Ry*</th>
+<th style="text-align: center;">r*Y</th>
+<th style="text-align: center;">r*y*</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RY</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>Ry*</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>r*Y</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>r*y*</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 3: Determine phenotypes</strong></p>
+<ul>
+<li><p><strong>Round Yellow (R_Y_)</strong></p></li>
+<li><p><strong>Round Green (R_y*y*)</strong></p></li>
+<li><p><strong>Wrinkled Yellow (r*r*Y_)</strong></p></li>
+<li><p><strong>Wrinkled Green (r*r*y*y*)</strong></p></li>
+</ul>
+<p><strong>Step 4: Count phenotypes</strong></p>
+<ul>
+<li><p>Round Yellow = ______</p></li>
+<li><p>Round Green = ______</p></li>
+<li><p>Wrinkled Yellow = ______</p></li>
+<li><p>Wrinkled Green = ______</p></li>
+</ul>
+<p><strong>Final Answer</strong></p>
+<p><strong>Phenotypic ratio: ______: ______: ______: ______</strong></p>
+<p><strong>Conclusion</strong></p>
+<p>A dihybrid cross between two heterozygous individuals produces a <strong>9:3:3:1 phenotypic ratio</strong> when the genes assort independently and follow complete dominance.</p>
+<p><strong>Practice Problems: Dihybrid Crosses</strong></p>
+<p><strong>Simple Problem 1</strong></p>
+<p>In pea plants:</p>
+<ul>
+<li><p><strong>Tall (T)</strong> is dominant to short (t*)</p></li>
+<li><p><strong>Purple flowers (P)</strong> are dominant to white (p*)</p></li>
+</ul>
+<p><strong>Cross:</strong></p>
+<ul>
+<li><p>Parent 1: <strong>Tt*Pp*</strong></p></li>
+<li><p>Parent 2: <strong>Tt*Pp*</strong></p></li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ul>
+<li><p>List all possible gametes using FOIL</p></li>
+<li><p>Construct the Punnett square</p></li>
+<li><p>Determine the phenotypic ratio</p>
+<hr>
+<hr></li>
+</ul>
+<p><strong>Simple Problem 2</strong></p>
+<p>In guinea pigs:</p>
+<ul>
+<li><p><strong>Black fur (B)</strong> is dominant to brown (b*)</p></li>
+<li><p><strong>Short hair (H)</strong> is dominant to long hair (h*)</p></li>
+</ul>
+<p>Cross:</p>
+<ul>
+<li><p>Parent 1: <strong>Bb*Hh*</strong></p></li>
+<li><p>Parent 2: <strong>b*b*h*h*</strong></p></li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ul>
+<li><p>What gametes can each parent produce?</p></li>
+<li><p>What is the phenotypic ratio of offspring?</p></li>
+</ul>
+<p><strong>More Advanced Problems</strong></p>
+<p><strong>Challenge Problem 1</strong></p>
+<p>In plants:</p>
+<ul>
+<li><p><strong>Red flowers (R)</strong> are dominant to white (r*)</p></li>
+<li><p><strong>Tall (T)</strong> is dominant to short (t*)</p></li>
+</ul>
+<p>Cross a <strong>heterozygous plant (Rr*Tt*)</strong> with a <strong>plant that is homozygous recessive for both traits (r*r*t*t*)</strong>.</p>
+<p><strong>Questions:</strong></p>
+<ul>
+<li>What are the gametes produced by each parent? List the type you expect to see below</li>
+</ul>
+<blockquote class="blockquote">
+<p>______, ______, ______, _______</p>
+</blockquote>
+<ul>
+<li>What phenotypic ratio would you expect?</li>
+</ul>
+<blockquote class="blockquote">
+<p>______: ______: ______: ______</p>
+</blockquote>
+<ul>
+<li>Why is this type of cross called a <strong>test cross</strong>?</li>
+</ul>
+<p><strong>Challenge Problem 2</strong></p>
+<p>In mice:</p>
+<ul>
+<li><p><strong>Gray fur (G)</strong> is dominant to white (g*)</p></li>
+<li><p><strong>Normal tail (T)</strong> is dominant to short tail (t*)</p></li>
+</ul>
+<p>Two mice are crossed, both with genotype <strong>Gg*Tt*</strong>.</p>
+<p><strong>Questions:</strong></p>
+<ul>
+<li>What phenotypic ratio is expected?</li>
+</ul>
+<blockquote class="blockquote">
+<p>______: ______: ______: ______</p>
+</blockquote>
+<ul>
+<li><p>What is the probability of producing a white mouse with a short tail?</p></li>
+<li><p>What fraction of offspring will be heterozygous for both traits?</p></li>
+</ul>
+<p><strong>Challenge Problem 3</strong></p>
+<p>In a dihybrid cross, the offspring phenotypes are observed in the ratio:</p>
+<ul>
+<li><p>9 dominant for both traits</p></li>
+<li><p>3 dominant for first trait, recessive for second</p></li>
+<li><p>3 recessive for first trait, dominant for second</p></li>
+<li><p>1 recessive for both traits</p></li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ul>
+<li><p>What were the genotypes of the parents?</p></li>
+<li><p>Explain why this ratio indicates independent assortment</p></li>
+<li><p>What would happen to this ratio if the genes were linked?</p></li>
+</ul>
+<p><strong>Challenge Problem 4</strong></p>
+<p>In corn:</p>
+<ul>
+<li><p><strong>Smooth kernels (S)</strong> are dominant to wrinkled (s*)</p></li>
+<li><p><strong>Yellow kernels (Y)</strong> are dominant to white (y*)</p></li>
+</ul>
+<p>A smooth yellow plant is crossed with a wrinkled white plant and produces offspring in equal proportions of:</p>
+<ul>
+<li><p>Smooth yellow</p></li>
+<li><p>Smooth white</p></li>
+<li><p>Wrinkled yellow</p></li>
+<li><p>Wrinkled white</p></li>
+</ul>
+<p><strong>Questions:</strong></p>
+<ul>
+<li><p>What must be the genotype of the smooth yellow parent?</p></li>
+<li><p>Explain how the data supports your answer</p></li>
+<li><p>Draw the appropriate Punnett square</p></li>
+</ul>
+<p><strong>Challenge Problem 5</strong></p>
+<p>A dihybrid cross is performed between two organisms. You observe that:</p>
+<ul>
+<li><p>50% of offspring show both dominant traits</p></li>
+<li><p>50% show both recessive traits</p></li>
+</ul>
+<p>No mixed phenotypes appear.</p>
+<p><strong>Questions:</strong></p>
+<ul>
+<li>What are the genotypes of the parents?</li>
+</ul>
+<p>______, ______, ______, _______</p>
+<ul>
+<li><p>Why are only two phenotypes observed?</p></li>
+<li><p>How does this differ from the typical 9:3:3:1 ratio?</p></li>
+</ul>
+<p><strong>Summary</strong></p>
+<p>Dihybrid crosses extend the principles learned in monohybrid crosses by examining <strong>two traits simultaneously</strong>. The use of the <strong>FOIL method</strong> simplifies the process of determining gametes, and Punnett squares allow prediction of offspring outcomes. When both parents are heterozygous and genes assort independently, the expected phenotypic ratio is <strong>9:3:3:1</strong>, but deviations from this ratio can reveal additional biological insights such as <strong>linkage or test crosses</strong>.</p>
+</section>
+<section id="key-terms-glossary" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="key-terms-glossary"><span class="header-section-number">11.6</span> <strong>Key Terms / Glossary</strong></h2>
+<p><strong>Trait</strong> – A heritable characteristic or feature of an organism, such as flower color or seed shape.</p>
+<p><strong>Gene</strong> – A basic unit of heredity that contributes to a specific biological characteristic.</p>
+<p><strong>Locus</strong> – The specific location of a gene on a chromosome.</p>
+<p><strong>Allele</strong> – One of two or more alternative versions of a gene at a given locus.</p>
+<p><strong>Homozygous</strong> – Having two identical alleles for a gene.</p>
+<p><strong>Heterozygous</strong> – Having two different alleles for a gene.</p>
+<p><strong>Dominant</strong> – Refers to an allele that is expressed in the phenotype when present in a heterozygous individual.</p>
+<p><strong>Recessive</strong> – Refers to an allele whose effect is masked in a heterozygous individual and expressed only when two recessive alleles are present.</p>
+<p><strong>Phenotype</strong> – The observable physical or physiological characteristics of an organism.</p>
+<p><strong>Genotype</strong> – The allele combination or genetic constitution of an organism.</p>
+<p><strong>Monohybrid Cross</strong> – A genetic cross that tracks the inheritance of a single trait or gene.</p>
+<p><strong>Dihybrid Cross</strong> – A genetic cross that tracks the inheritance of two different traits or genes at the same time.</p>
+<p><strong>Complete Dominance</strong> – A pattern of inheritance in which the heterozygote has the same phenotype as the homozygous dominant individual.</p>
+<p><strong>Incomplete Dominance</strong> – A pattern of inheritance in which the heterozygous phenotype is intermediate between the two homozygous phenotypes.</p>
+<p><strong>Codominance</strong> – A pattern of inheritance in which both alleles are fully expressed in the heterozygous phenotype.</p>
+<p><strong>Sex-Linked Inheritance</strong> – Inheritance of traits determined by genes located on the sex chromosomes, commonly the X chromosome.</p>
+</section>
+<section id="post-lab-analysis-questions" class="level2" data-number="11.7">
+<h2 data-number="11.7" class="anchored" data-anchor-id="post-lab-analysis-questions"><span class="header-section-number">11.7</span> <strong>Post-Lab Analysis Questions</strong></h2>
+<ol type="1">
+<li><p>Briefly explain how Mendel’s experiments with pea plants contributed to the development of modern genetics.</p></li>
+<li><p>In your own words, distinguish between a <strong>gene</strong>, an <strong>allele</strong>, and a <strong>trait</strong>.</p></li>
+<li><p>Why is it important to distinguish between <strong>phenotype</strong> and <strong>genotype</strong> when analyzing a genetic cross?</p></li>
+<li><p>In a monohybrid cross involving complete dominance, why can two organisms with the same phenotype have different genotypes?</p></li>
+<li><p>What genotypic ratio is expected when two heterozygous individuals are crossed for a trait with complete dominance?</p></li>
+<li><p>What phenotypic ratio is expected in the same cross?</p></li>
+<li><p>How does the phenotypic ratio in <strong>incomplete dominance</strong> differ from the phenotypic ratio in <strong>complete dominance</strong> for a heterozygote × heterozygote cross?</p></li>
+<li><p>How does <strong>codominance</strong> differ conceptually from <strong>incomplete dominance</strong>?</p></li>
+<li><p>Why do sex-linked traits often appear more frequently in one sex than in the other?</p></li>
+<li><p>What additional information can be learned from a <strong>dihybrid cross</strong> that cannot be learned from a <strong>monohybrid cross</strong>?</p></li>
+<li><p>Explain how a dihybrid cross can be used to illustrate the principle of independent assortment.</p></li>
+<li><p>If observed data from a cross do not exactly match expected ratios, what biological or experimental factors might explain the discrepancy?</p></li>
+<li><p>Which type of inheritance pattern in this lab did you find most conceptually challenging, and why?</p></li>
+<li><p>How does understanding patterns of inheritance help biologists interpret heredity in plants, animals, and humans?</p></li>
+</ol>
+<blockquote class="blockquote">
+<p><strong>Attribution Statement</strong></p>
+<p>This laboratory manual chapter incorporates and adapts content from a variety of educational and scholarly sources. The following materials were used in the development of this work:</p>
+<p>Content related to fundamental principles of genetics, Mendelian inheritance, and Punnett square analysis was adapted from <em>Biology 2e</em> by OpenStax, which is licensed under a Creative Commons Attribution (CC BY 4.0) License. OpenStax resources are freely available at: <a href="https://openstax.org/details/books/biology-2e" class="uri">https://openstax.org/details/books/biology-2e</a>. The material has been edited, arranged, and framed to match the learning goals of this laboratory exercise.</p>
+<p>Historical context and interpretation of Gregor Mendel’s work were informed by:</p>
+</blockquote>
+<ul>
+<li><p>Abbott, S., and Fairbanks, D. (2016), <em>Perspectives: Experiments on Plant Hybrids by Gregor Mendel</em>, <em>Genetics</em> 116:195–198.</p></li>
+<li><p>Mendel, G. (1865), <em>Experiments in Plant Hybridization</em>, English translations available at:</p>
+<ul>
+<li><p><a href="http://www.mendelweb.org/Mendel.html" class="uri">http://www.mendelweb.org/Mendel.html</a></p></li>
+<li><p><a href="http://www.esp.org/books/bateson/mendel/facsimile/contents/bateson-mendel-3-peas.pdf" class="uri">http://www.esp.org/books/bateson/mendel/facsimile/contents/bateson-mendel-3-peas.pdf</a></p></li>
+</ul></li>
+</ul>
+<blockquote class="blockquote">
+<p>Additional supporting material and explanatory context were drawn from:</p>
+</blockquote>
+<ul>
+<li><p><em>Introductory Biology</em> (Copyright © will1278 and various authors), licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).</p></li>
+<li><p>“Experiments on Plant Hybridization,” <em>Wikipedia</em>, available at https://en.wikipedia.org/wiki/Experiments_on_Plant_Hybridization.</p></li>
+<li><p>Andrei, A. (2013), “<em>Experiments in Plant Hybridization (1866), by Johann Gregor Mendel</em>,” <em>Embryo Project Encyclopedia</em>, ISSN 1940-5030, https://hdl.handle.net/10776/6240.</p></li>
+</ul>
+<blockquote class="blockquote">
+<p>All third-party materials have been used in accordance with their respective licensing terms. This lab manual chapter represents a modified and integrated educational resource, and any errors or interpretations are the responsibility of the author.</p>
+</blockquote>
+</section>
+<section id="procedure-overview" class="level2" data-number="11.8">
+<h2 data-number="11.8" class="anchored" data-anchor-id="procedure-overview"><span class="header-section-number">11.8</span> <strong>Procedure Overview</strong></h2>
+<p><strong>Part I. Review of Mendelian Terminology and Genetic Notation</strong></p>
+<ol type="1">
+<li><p>Review the definitions of the terms provided in the glossary.</p></li>
+<li><p>Practice writing genotypes using standard letter notation for dominant and recessive alleles.</p></li>
+<li><p>Distinguish between genotype and phenotype for several sample organisms or traits.</p></li>
+</ol>
+<p><strong>Part II. Monohybrid Crosses with Complete Dominance</strong></p>
+<ol type="1">
+<li><p>Examine a genetic trait controlled by two alleles in which one allele is completely dominant to the other.</p></li>
+<li><p>Construct Punnett squares for parental crosses provided by the instructor or laboratory handout.</p></li>
+<li><p>Determine the expected genotypic and phenotypic ratios for the offspring.</p></li>
+<li><p>Compare predicted ratios with any observed class or sample data, if provided.</p></li>
+</ol>
+<p><strong>Part III. Monohybrid Crosses with Incomplete Dominance</strong></p>
+<ol type="1">
+<li><p>Analyze a trait in which the heterozygous phenotype is intermediate between the two homozygous phenotypes.</p></li>
+<li><p>Use Punnett square analysis to predict offspring genotypes and phenotypes.</p></li>
+<li><p>Record expected ratios and compare them with complete dominance outcomes.</p></li>
+</ol>
+<p><strong>Part IV. Monohybrid Crosses with Codominance</strong></p>
+<ol type="1">
+<li><p>Examine a trait in which both alleles are expressed in the heterozygous condition.</p></li>
+<li><p>Complete Punnett square analysis for the assigned codominant cross.</p></li>
+<li><p>Compare the resulting phenotypic ratios with those seen in complete and incomplete dominance.</p></li>
+</ol>
+<p><strong>Part V. Monohybrid Crosses with Sex Linkage</strong></p>
+<ol type="1">
+<li><p>Review the inheritance of a trait controlled by a gene located on the X chromosome.</p></li>
+<li><p>Use sex-linked notation to represent parental genotypes.</p></li>
+<li><p>Predict the expected phenotypic distribution among male and female offspring.</p></li>
+<li><p>Identify why reciprocal crosses may produce different results in sex-linked inheritance.</p></li>
+</ol>
+<p><strong>Part VI. Dihybrid Crosses</strong></p>
+<ol type="1">
+<li><p>Construct Punnett squares or use a forked-line method to analyze a cross involving two separately inherited traits.</p></li>
+<li><p>Determine the expected genotypic and phenotypic ratios.</p></li>
+<li><p>Evaluate how the results illustrate Mendel’s principle of independent assortment.</p></li>
+</ol>
+<p><strong>Part VII. Interpretation and Discussion</strong></p>
+<ol type="1">
+<li><p>Summarize the inheritance pattern observed in each type of cross.</p></li>
+<li><p>Compare different modes of inheritance and identify how they alter expected phenotypic ratios.</p></li>
+<li><p>Answer post-laboratory questions using both calculations and written explanations.</p></li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Laboratory_Exercise_11_Mendelian_Genetics_in_Corn_and_Chi_Square_Testing.html" class="pagination-link" aria-label="**Mendelian Genetics in Corn and Chi-Square Testing**">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><strong>Mendelian Genetics in Corn and Chi-Square Testing</strong></span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
