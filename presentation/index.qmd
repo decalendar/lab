@@ -27,7 +27,7 @@ For best results, I suggest following the PDF export instructions in the [Reveal
 
 PDF files are ubiquitous and it is good to know that you can generate one with nothing more than a web browser whenever necessary, but HTML files can do many things that PDF files simply cannot.
 
-The example presentation below shows what is expected for the Research Presentation assignment. It covers chi-square (&chi;^2^) testing in genetics from Chapter 11 of the lab manual and models each part of the rubric:
+The example presentation below shows what is expected for the Research Presentation assignment. It covers chi-square (χ^2^) testing in genetics from Chapter 11 of the lab manual and models each part of the rubric:
 
 - **Scientific content and research quality:** accurate explanations supported by academic sources, including a human genetics example
 - **Organization and structure:** a clear introduction, body, and conclusion
@@ -55,4 +55,4 @@ Instead of embedding your presentation in a webpage as shown above, you can view
 
 To edit a presentation, you can modify the plain text of the associated qmd file in a [text editor](https://en.wikipedia.org/wiki/Text_editor) or work with a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) version via the [Visual Mode](https://docs.posit.co/ide/user/ide/guide/documents/visual-editor.html) in RStudio, VSCode, Codespaces, or Positron.
 
-When you want to update the presentation on your website, all you have to do is add, commit, and push your changes. It may take some time for your site to update after you push changes. You can see the status and logs of all of your website builds in the Actions tab of your repo on <www.github.com>.
+When you want to update the presentation on your website, all you have to do is add, commit, and push your changes. It may take some time for your site to update after you push changes. You can see the status and logs of all of your website builds in the Actions tab of your repo on \<www.github.com\>.

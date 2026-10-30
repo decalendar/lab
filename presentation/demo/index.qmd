@@ -23,7 +23,7 @@ resources:
 
 . . .
 
-The **chi-square (&chi;^2^) goodness-of-fit test** tells us whether the difference between what we **observed** and what we **expected** is small enough to be explained by chance.
+The **chi-square (χ^2^) goodness-of-fit test** tells us whether the difference between what we **observed** and what we **expected** is small enough to be explained by chance.
 
 ::: notes
 Open with the question, not the formula. Ask the audience: if you counted 78 tall and 22 short plants instead of 75 and 25, would you say Mendel was wrong? Pause for a moment before revealing the answer.
@@ -31,25 +31,25 @@ Open with the question, not the formula. Ask the audience: if you counted 78 tal
 
 ## Background: where expected ratios come from
 
-:::: {.columns}
+::::: columns
 ::: {.column width="45%"}
-A monohybrid cross of two heterozygotes (Pp &times; Pp):
+A monohybrid cross of two heterozygotes (Pp × Pp):
 
 |       | **P** | **p** |
 |-------|:-----:|:-----:|
-| **P** | PP    | Pp    |
-| **p** | Pp    | pp    |
+| **P** |  PP   |  Pp   |
+| **p** |  Pp   |  pp   |
 
-: Punnett square for Pp &times; Pp {tbl-colwidths="[20,40,40]"}
+: Punnett square for Pp × Pp
 :::
 
 ::: {.column width="55%"}
 - Genotypes: 1 PP : 2 Pp : 1 pp
 - Phenotypes: **3 dominant : 1 recessive**
-- A dihybrid cross (PpSs &times; PpSs) gives **9 : 3 : 3 : 1**
+- A dihybrid cross (PpSs × PpSs) gives **9 : 3 : 3 : 1**
 - These ratios were first reported by Mendel (1866)
 :::
-::::
+:::::
 
 ::: notes
 Briefly connect to the Punnett squares the class completed in Lab 11. Emphasize that the Punnett square gives probabilities, so the observed counts will vary around them.
@@ -57,7 +57,7 @@ Briefly connect to the Punnett squares the class completed in Lab 11. Emphasize 
 
 ## Hypotheses
 
-Every &chi;^2^ test starts with two competing statements:
+Every χ^2^ test starts with two competing statements:
 
 - **Null hypothesis** ($H_0$): the observed counts fit the expected Mendelian ratio; any differences are due to random chance.
 - **Alternative hypothesis** ($H_1$): the observed counts do **not** fit the expected ratio.
@@ -70,7 +70,7 @@ We choose a significance level before looking at the data: $\alpha = 0.05$.
 Stress that the test is built around the null hypothesis. We never "prove" the null; we either reject it or fail to reject it.
 :::
 
-## The &chi;^2^ statistic
+## The χ^2^ statistic
 
 $$
 \chi^2 = \sum_{i=1}^{k} \frac{(O_i - E_i)^2}{E_i}
@@ -92,7 +92,7 @@ Walk through each piece of the formula. Squaring removes negative signs; dividin
 
 If $\chi^2$ is greater than the critical value, we **reject** $H_0$.
 
-::: {.smallfont}
+::: smallfont
 {{< embed chisq.ipynb#crit-values echo=true >}}
 :::
 
@@ -160,7 +160,7 @@ Compare R's result to the hand calculation in the lab manual and explain the sma
 
 {{< embed chisq.ipynb#obs-exp-plot >}}
 
-Wrinkled yellow seeds (40 observed vs. 60 expected) account for most of the &chi;^2^ value.
+Wrinkled yellow seeds (40 observed vs. 60 expected) account for most of the χ^2^ value.
 
 ::: notes
 A figure makes the mismatch visible immediately. Every figure in a presentation should have a clear purpose and labeled axes.
@@ -209,7 +209,7 @@ Point out the degrees-of-freedom subtlety: we lose one df for each parameter est
 
 ## Limitations
 
-- &chi;^2^ needs **counts**, not percentages or measurements
+- χ^2^ needs **counts**, not percentages or measurements
 - Each expected count should be **at least 5**
 - Failing to reject $H_0$ does **not prove** the hypothesis is true
 - A fit can even be *too* good: Fisher (1936) argued that Mendel's published data matched expectations more closely than chance would predict
@@ -221,7 +221,7 @@ End the body of the talk with critical thinking. The Fisher anecdote shows that 
 ## Conclusion
 
 - Genetics predicts **expected ratios**; real data vary by chance
-- &chi;^2^ tells us if the variation is larger than chance would produce
+- χ^2^ tells us if the variation is larger than chance would produce
 - Compare $\chi^2$ to the critical value and state a conclusion about $H_0$
 - The same test works for plants and human populations
 
