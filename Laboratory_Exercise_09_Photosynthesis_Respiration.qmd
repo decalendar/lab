@@ -2,11 +2,11 @@
 
 > Plants play a critical role in the flow of energy through ecosystems by capturing sunlight and converting it into chemical energy through the process of photosynthesis. In this process, plants use light energy, along with carbon dioxide (CO₂) from the atmosphere and water (H₂O) from the soil, to synthesize glucose (C₆H₁₂O₆), a type of sugar that stores energy in its chemical bonds. Oxygen (O₂) is released as a byproduct. This process is summarized by the following equation:
 >
-> ***6H~2~O + 6CO~2~* + light + energy→*C~6~H~12~O~6~ + 6O~2~ + 6H2O + 6CO~2~***
+> ***6H~2~O + 6CO~2~*** **+ light + energy→*C~6~H~12~O~6~ + 6O~2~ + 6H2O + 6CO~2~***
 >
 > The glucose produced during photosynthesis serves as an energy-rich molecule that plants can use later to fuel cellular activities. When energy is needed, plants (like all living organisms) break down glucose through the process of cellular respiration. During cellular respiration, glucose reacts with oxygen to produce carbon dioxide, water, and usable energy in the form of ATP (adenosine triphosphate). This process releases the stored energy from glucose and is described by the following equation:
 >
-> ***C~6~H~12~O~6~+6O~2~* → 6*H2O + 6CO* + energy (ATP)**
+> ***C~6~H~12~O~6~+6O~2~*** **→ 6*H2O + 6CO* + energy (ATP)**
 >
 > Cellular respiration occurs in the mitochondria of cells and is essential for powering cellular processes such as growth, movement, and biosynthesis. Photosynthesis stores energy; cellular respiration releases it, making these processes complementary and interdependent.
 >
@@ -262,13 +262,13 @@ b.  Select Calibrate from the drop-down menu
 
 <!-- -->
 
-3.  Check the box for LabPro: 1 CH 2: Oxygen Gas \'
+3.  Check the box for LabPro: 1 CH 2: Oxygen Gas '
 
-> 1v. Click on the \"**Calibrate Now Box**\" in the Sensor Settings window box
+> 1v. Click on the "**Calibrate Now Box**" in the Sensor Settings window box
 
 a.  Enter **20.9** as Reading 1
 
-b.  Click \"**Keep**\"
+b.  Click "**Keep**"
 
 c.  Place the tip of a stylus into the CAL slot of the O2 Sensor (between the green bands)
 
@@ -276,9 +276,9 @@ c.  Place the tip of a stylus into the CAL slot of the O2 Sensor (between the gr
 
     ii. While holding the button in to maintain the near zero voltage reading. enter O for Reading 2.
 
-        1.  Click \"Keep\"
+        1.  Click "Keep"
 
-        2.  Click \"Done\"
+        2.  Click "Done"
 
 **TEST PROCEDURE:** Note for best results conduct the foil-wrapped test first
 
@@ -314,7 +314,7 @@ c.  Place the tip of a stylus into the CAL slot of the O2 Sensor (between the gr
 
 7.  Store your data by choosing Store Latest Run from the Experiment menu.
 
-8.  When data collection has finished, change the column heading of the latest run by clicking on the column heading and typing \"**Dark Run\"** in the pop-up box
+8.  When data collection has finished, change the column heading of the latest run by clicking on the column heading and typing "**Dark Run"** in the pop-up box
 
 > **\
 > Plain chamber (light chamber) test**
@@ -329,7 +329,7 @@ c.  Place the tip of a stylus into the CAL slot of the O2 Sensor (between the gr
 
 13. Repeat Steps 4 --6 to collect and analyze data.
 
-14. When data collection has finished, change the column heading of the latest run by clicking on the column heading and typing \"Light Run\" in the pop-up box
+14. When data collection has finished, change the column heading of the latest run by clicking on the column heading and typing "Light Run" in the pop-up box
 
 ### **Determine the Rates of Photosynthesis/Respiration**
 
@@ -361,15 +361,15 @@ c.  Place the tip of a stylus into the CAL slot of the O2 Sensor (between the gr
 
 > **Table 9.1 Experimental Data showing Carbon Dioxide (CO₂) and Oxygen (O₂) Rates for Plant Leaves Under Two Conditions: Dark and Light**
 
-+-----------------------+------------------------------------------------------+-----------------------------------------------------+
-| > Table 1             |                                                      |                                                     |
-+:======================+======================================================+=====================================================+
-| > **Leaves**          | > **CO~2~ rate of production/consumption (ppt/min)** | > **O~2~ rate of production/consumption (ppt/min)** |
-+-----------------------+------------------------------------------------------+-----------------------------------------------------+
-| > In the dark         |                                                      |                                                     |
-+-----------------------+------------------------------------------------------+-----------------------------------------------------+
-| > In the light        |                                                      |                                                     |
-+-----------------------+------------------------------------------------------+-----------------------------------------------------+
++----------------+------------------------------------------------------+-----------------------------------------------------+
+| > Table 1      |                                                      |                                                     |
++:===============+======================================================+=====================================================+
+| > **Leaves**   | > **CO~2~ rate of production/consumption (ppt/min)** | > **O~2~ rate of production/consumption (ppt/min)** |
++----------------+------------------------------------------------------+-----------------------------------------------------+
+| > In the dark  | 1                                                    |                                                     |
++----------------+------------------------------------------------------+-----------------------------------------------------+
+| > In the light |                                                      |                                                     |
++----------------+------------------------------------------------------+-----------------------------------------------------+
 
 > Describe the trends in the production or consumption of CO2 and O2 in the following conditions:
 
@@ -531,60 +531,60 @@ b.  **O2** Connect the O2 Gas Sensor to Channel 2 (CH 2) on the left side of the
 
     c.  Select ***Biology with Vernier***
 
-    d.  Select Experiment **\"31C Photo (CO2 and O2)\"** from the end of the list
+    d.  Select Experiment **"31C Photo (CO2 and O2)"** from the end of the list
 
-    e.  Two graphs will appear. Move your cursor to the background of the CO2 graph and double click. The graph options box will appear. Under the axis options tab, for the \"Y\" axis, change the \"Scaling:\" setting from \"manual\" to \"Autoscale\" Click "**Done**"
+    e.  Two graphs will appear. Move your cursor to the background of the CO2 graph and double click. The graph options box will appear. Under the axis options tab, for the "Y" axis, change the "Scaling:" setting from "manual" to "Autoscale" Click "**Done**"
 
-    f.  Repeat \"Y\" axis scaling change for the O2 graph
+    f.  Repeat "Y" axis scaling change for the O2 graph
 
 ## **Appendix: Photosynthesis and Respiration Terms**
 
-  -------------------------------------------------------------------------------------------------------------
-  **Term**                **Definition**
-  ----------------------- -------------------------------------------------------------------------------------
-  Aerobic Respiration     The process of producing ATP using oxygen in the mitochondria.
-
-  Anaerobic Respiration   Energy production without oxygen, resulting in less ATP.
-
-  ATP                     Adenosine triphosphate, the main energy-carrying molecule used by cells.
-
-  Autotroph               An organism that produces its own food using light or chemical energy.
-
-  Calvin Cycle            The stage of photosynthesis where carbon dioxide is used to produce glucose.
-
-  Carbon Dioxide (CO2)    A gas used in photosynthesis and released during respiration.
-
-  Cellular Respiration    The process that converts glucose into ATP, carbon dioxide, and water.
-
-  Chloroplast             The organelle in plant cells where photosynthesis occurs.
-
-  Enzyme                  A protein that speeds up chemical reactions.
-
-  Equilibrium             A state where there is no net change in concentration or energy.
-
-  Gas Exchange            The movement of oxygen and carbon dioxide into and out of cells.
-
-  Glucose                 A sugar molecule that stores energy produced during photosynthesis.
-
-  Light Reactions         The stage of photosynthesis that captures light energy and produces ATP and oxygen.
-
-  Metabolic Rate          The rate at which chemical reactions occur in an organism.
-
-  Mitochondrion           The organelle where cellular respiration occurs.
-
-  Oxidation               The loss of electrons during a chemical reaction.
-
-  Oxygen (O2)             A gas used in respiration and produced during photosynthesis.
-
-  Photosynthesis          The process plants use to convert light energy into chemical energy in glucose.
-
-  Reduction               The gain of electrons during a chemical reaction.
-
-  Stomata                 Small openings in leaves that allow gas exchange.
-
-  Stroma                  The fluid-filled space in chloroplasts where the Calvin cycle occurs.
-
-  Thylakoid               Membrane structures in chloroplasts where light reactions occur.
-  -------------------------------------------------------------------------------------------------------------
++-----------------------+-------------------------------------------------------------------------------------+
+| **Term**              | **Definition**                                                                      |
++:======================+:====================================================================================+
+| Aerobic Respiration   | The process of producing ATP using oxygen in the mitochondria.                      |
++-----------------------+-------------------------------------------------------------------------------------+
+| Anaerobic Respiration | Energy production without oxygen, resulting in less ATP.                            |
++-----------------------+-------------------------------------------------------------------------------------+
+| ATP                   | Adenosine triphosphate, the main energy-carrying molecule used by cells.            |
++-----------------------+-------------------------------------------------------------------------------------+
+| Autotroph             | An organism that produces its own food using light or chemical energy.              |
++-----------------------+-------------------------------------------------------------------------------------+
+| Calvin Cycle          | The stage of photosynthesis where carbon dioxide is used to produce glucose.        |
++-----------------------+-------------------------------------------------------------------------------------+
+| Carbon Dioxide (CO2)  | A gas used in photosynthesis and released during respiration.                       |
++-----------------------+-------------------------------------------------------------------------------------+
+| Cellular Respiration  | The process that converts glucose into ATP, carbon dioxide, and water.              |
++-----------------------+-------------------------------------------------------------------------------------+
+| Chloroplast           | The organelle in plant cells where photosynthesis occurs.                           |
++-----------------------+-------------------------------------------------------------------------------------+
+| Enzyme                | A protein that speeds up chemical reactions.                                        |
++-----------------------+-------------------------------------------------------------------------------------+
+| Equilibrium           | A state where there is no net change in concentration or energy.                    |
++-----------------------+-------------------------------------------------------------------------------------+
+| Gas Exchange          | The movement of oxygen and carbon dioxide into and out of cells.                    |
++-----------------------+-------------------------------------------------------------------------------------+
+| Glucose               | A sugar molecule that stores energy produced during photosynthesis.                 |
++-----------------------+-------------------------------------------------------------------------------------+
+| Light Reactions       | The stage of photosynthesis that captures light energy and produces ATP and oxygen. |
++-----------------------+-------------------------------------------------------------------------------------+
+| Metabolic Rate        | The rate at which chemical reactions occur in an organism.                          |
++-----------------------+-------------------------------------------------------------------------------------+
+| Mitochondrion         | The organelle where cellular respiration occurs.                                    |
++-----------------------+-------------------------------------------------------------------------------------+
+| Oxidation             | The loss of electrons during a chemical reaction.                                   |
++-----------------------+-------------------------------------------------------------------------------------+
+| Oxygen (O2)           | A gas used in respiration and produced during photosynthesis.                       |
++-----------------------+-------------------------------------------------------------------------------------+
+| Photosynthesis        | The process plants use to convert light energy into chemical energy in glucose.     |
++-----------------------+-------------------------------------------------------------------------------------+
+| Reduction             | The gain of electrons during a chemical reaction.                                   |
++-----------------------+-------------------------------------------------------------------------------------+
+| Stomata               | Small openings in leaves that allow gas exchange.                                   |
++-----------------------+-------------------------------------------------------------------------------------+
+| Stroma                | The fluid-filled space in chloroplasts where the Calvin cycle occurs.               |
++-----------------------+-------------------------------------------------------------------------------------+
+| Thylakoid             | Membrane structures in chloroplasts where light reactions occur.                    |
++-----------------------+-------------------------------------------------------------------------------------+
 
 **This laboratory exercise is adapted from *Biology with Vernier: Experiment 31C -- Photosynthesis and Respiration* (November 1, 2022), with later modifications for instructional use.**
