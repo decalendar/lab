@@ -255,11 +255,6 @@ Example Student
 <p>A monohybrid cross of two heterozygotes (Pp × Pp):</p>
 <table class="caption-top">
 <caption>Punnett square for Pp × Pp</caption>
-<colgroup>
-<col style="width: 20%">
-<col style="width: 40%">
-<col style="width: 40%">
-</colgroup>
 <thead>
 <tr class="header">
 <th></th>
@@ -357,7 +352,7 @@ Example Student
 <h2>Critical values</h2>
 <p>If <span class="math inline">\(\chi^2\)</span> is greater than the critical value, we <strong>reject</strong> <span class="math inline">\(H_0\)</span>.</p>
 <div class="smallfont">
-<div class="quarto-embed-nb-cell" data-notebook="/home/runner/work/lab/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="crit-values">
+<div class="quarto-embed-nb-cell" data-notebook="/workspaces/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="crit-values">
 <div id="crit-values" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T14:42:05.092339Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T14:42:05.092011Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T14:42:05.097737Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T14:42:05.097281Z&quot;}}" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="" aria-label="1"></a><span class="fu">data.frame</span>(<span class="at">df =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="at">critical_value =</span> <span class="fu">round</span>(<span class="fu">qchisq</span>(<span class="fl">0.95</span>, <span class="at">df =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>), <span class="dv">2</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -416,7 +411,7 @@ Example Student
 <section id="example-1-monohybrid-cross-31" class="slide level2 smaller larger-code">
 <h2>Example 1: monohybrid cross (3:1)</h2>
 <p>Data from the Chapter 11 worked example: 78 tall and 22 short plants.</p>
-<div class="quarto-embed-nb-cell" data-notebook="/home/runner/work/lab/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="mono-data">
+<div class="quarto-embed-nb-cell" data-notebook="/workspaces/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="mono-data">
 <div id="mono-data" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T14:42:05.037528Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T14:42:05.025484Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T14:42:05.048701Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T14:42:05.048125Z&quot;}}" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="" aria-label="1"></a>observed <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">Tall =</span> <span class="dv">78</span>, <span class="at">Short =</span> <span class="dv">22</span>)</span>
 <span id="cb2-2"><a href="" aria-label="2"></a>ratio    <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">1</span>)</span>
@@ -459,7 +454,7 @@ Example Student
 </div>
 </div>
 <div class="fragment">
-<div class="quarto-embed-nb-cell" data-notebook="/home/runner/work/lab/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="mono-test">
+<div class="quarto-embed-nb-cell" data-notebook="/workspaces/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="mono-test">
 <div id="mono-test" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T14:42:05.050566Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T14:42:05.050144Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T14:42:05.058371Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T14:42:05.057877Z&quot;}}" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="" aria-label="1"></a><span class="fu">chisq.test</span>(observed, <span class="at">p =</span> ratio <span class="sc">/</span> <span class="fu">sum</span>(ratio))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
@@ -512,7 +507,7 @@ X-squared = 0.48, df = 1, p-value = 0.4884</code></pre>
 <section id="example-2-dihybrid-cross-9331" class="slide level2 smaller larger-code">
 <h2>Example 2: dihybrid cross (9:3:3:1)</h2>
 <p>Data from the Chapter 11 worked example: 320 seeds.</p>
-<div class="quarto-embed-nb-cell" data-notebook="/home/runner/work/lab/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="di-data">
+<div class="quarto-embed-nb-cell" data-notebook="/workspaces/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="di-data">
 <div id="di-data" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T14:42:05.059967Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T14:42:05.059650Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T14:42:05.066723Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T14:42:05.066308Z&quot;}}" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="" aria-label="1"></a>observed <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">`</span><span class="at">Round yellow</span><span class="st">`</span> <span class="ot">=</span> <span class="dv">190</span>, <span class="st">`</span><span class="at">Round green</span><span class="st">`</span> <span class="ot">=</span> <span class="dv">65</span>,</span>
 <span id="cb5-2"><a href="" aria-label="2"></a>              <span class="st">`</span><span class="at">Wrinkled yellow</span><span class="st">`</span> <span class="ot">=</span> <span class="dv">40</span>, <span class="st">`</span><span class="at">Wrinkled green</span><span class="st">`</span> <span class="ot">=</span> <span class="dv">25</span>)</span>
@@ -583,7 +578,7 @@ X-squared = 0.48, df = 1, p-value = 0.4884</code></pre>
 </section>
 <section id="example-2-the-test" class="slide level2">
 <h2>Example 2: the test</h2>
-<div class="quarto-embed-nb-cell" data-notebook="/home/runner/work/lab/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="di-test">
+<div class="quarto-embed-nb-cell" data-notebook="/workspaces/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="di-test">
 <div id="di-test" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T14:42:05.068172Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T14:42:05.067821Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T14:42:05.072316Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T14:42:05.071902Z&quot;}}" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="" aria-label="1"></a>di_result <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(observed, <span class="at">p =</span> ratio <span class="sc">/</span> <span class="fu">sum</span>(ratio))</span>
 <span id="cb6-2"><a href="" aria-label="2"></a>di_result</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -619,7 +614,7 @@ X-squared = 8.8889, df = 3, p-value = 0.03081</code></pre>
 </div></aside></section>
 <section id="observed-vs.-expected" class="slide level2 observed-expected">
 <h2>Observed vs.&nbsp;expected</h2>
-<div class="quarto-embed-nb-cell" data-notebook="/home/runner/work/lab/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="obs-exp-plot">
+<div class="quarto-embed-nb-cell" data-notebook="/workspaces/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="obs-exp-plot">
 <div id="obs-exp-plot" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T14:42:05.073730Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T14:42:05.073417Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T14:42:05.090629Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T14:42:05.090194Z&quot;}}" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <div>
@@ -647,7 +642,7 @@ X-squared = 8.8889, df = 3, p-value = 0.03081</code></pre>
 </section>
 <section id="where-does-our-result-fall" class="slide level2">
 <h2>Where does our result fall?</h2>
-<div class="quarto-embed-nb-cell" data-notebook="/home/runner/work/lab/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="dist-plot">
+<div class="quarto-embed-nb-cell" data-notebook="/workspaces/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="dist-plot">
 <div id="dist-plot" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T14:42:05.099164Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T14:42:05.098844Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T14:42:05.117990Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T14:42:05.117567Z&quot;}}" data-execution_count="8">
 <div class="cell-output cell-output-display">
 <div>
@@ -696,7 +691,7 @@ X-squared = 8.8889, df = 3, p-value = 0.03081</code></pre>
 </section>
 <section id="expected-mn-genotypes" class="slide level2 smaller larger-code mn-genotypes">
 <h2>Expected MN genotypes</h2>
-<div class="quarto-embed-nb-cell" data-notebook="/home/runner/work/lab/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="hwe-data">
+<div class="quarto-embed-nb-cell" data-notebook="/workspaces/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="hwe-data">
 <div id="hwe-data" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T14:42:05.119781Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T14:42:05.119388Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T14:42:05.127821Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T14:42:05.127402Z&quot;}}" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="" aria-label="1"></a>observed <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">MM =</span> <span class="dv">363</span>, <span class="at">MN =</span> <span class="dv">634</span>, <span class="at">NN =</span> <span class="dv">282</span>)</span>
 <span id="cb8-2"><a href="" aria-label="2"></a>n <span class="ot">&lt;-</span> <span class="fu">sum</span>(observed)</span>
@@ -771,7 +766,7 @@ X-squared = 8.8889, df = 3, p-value = 0.03081</code></pre>
 </section>
 <section id="human-connection-result" class="slide level2">
 <h2>Human connection: result</h2>
-<div class="quarto-embed-nb-cell" data-notebook="/home/runner/work/lab/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="hwe-test">
+<div class="quarto-embed-nb-cell" data-notebook="/workspaces/lab/presentation/demo/chisq.ipynb" data-notebook-title="Chi-square (χ²) testing in genetics" data-notebook-cellid="hwe-test">
 <div id="hwe-test" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T14:42:05.129199Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T14:42:05.128887Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T14:42:05.133277Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T14:42:05.132890Z&quot;}}" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="" aria-label="1"></a><span class="co"># df = 3 genotypes - 1 - 1 allele frequency estimated from the data = 1</span></span>
 <span id="cb9-2"><a href="" aria-label="2"></a>stat <span class="ot">&lt;-</span> <span class="fu">sum</span>((observed <span class="sc">-</span> expected)<span class="sc">^</span><span class="dv">2</span> <span class="sc">/</span> expected)</span>
