@@ -1,0 +1,32 @@
+.reveal table {
+  font-size: 0.8em;
+}
+
+.reveal .cell-output pre code {
+  font-size: 0.85em;
+}
+
+.reveal .cell-output-display img {
+  width: 75%;
+  height: auto;
+}
+
+/* Smaller table in the browser only; demo.pdf (exported with ?pdf-export) keeps the default size */
+html:not(.pdf-export) .reveal .critical-values table {
+  font-size: 0.8em;
+}
+
+/* Use the spare room on the code-heavy slides (7, 9 and 14) */
+.reveal .larger-code div.sourceCode pre code {
+  font-size: 1.4em;
+}
+
+/* Slide 14 has longer lines (trailing comments), so it gets a little less */
+.reveal .larger-code.mn-genotypes div.sourceCode pre code {
+  font-size: 1.25em;
+}
+
+/* Keep the caption below the plot clear of the footer */
+.reveal .observed-expected .cell-output-display img {
+  width: 72%;
+}
