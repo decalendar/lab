@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.20">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Introduction to Mendelian Genetics – Introduction to Human Biology Laboratory Workbook</title>
+<title>12&nbsp; Introduction to Mendelian Genetics – Introduction to Human Biology Laboratory Workbook</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -40,18 +40,19 @@ ul.task-list li input[type="checkbox"] {
 <link href="./Laboratory_Exercise_11_Mendelian_Genetics_in_Corn_and_Chi_Square_Testing.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0ae969d3293726db143f6e9eb89af930.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-17888a1159294d3eb470f19f6f52f5a5.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a9199681efa584071f275371100a1fa0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-8410635dfa07c74b9daab710386818db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-a9199681efa584071f275371100a1fa0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4f67ab1e4efc86feb5e21e0983fc9301.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-45e544d7ffd24dd526961fb18fe0f1bf.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-4f67ab1e4efc86feb5e21e0983fc9301.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -83,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -106,6 +107,7 @@ ul.task-list li input[type="checkbox"] {
       for (let i=0; i < toggles.length; i++) {
         const toggle = toggles[i];
         if (toggle) {
+          toggle.setAttribute("aria-checked", alternate ? "true" : "false");
           if (alternate) {
             toggle.classList.add("alternate");
           } else {
@@ -135,13 +137,19 @@ ul.task-list li input[type="checkbox"] {
       manageTransitions('#quarto-margin-sidebar .nav-link', true);
       // Switch the toggles
       setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455).
+    // Not run on load: stylesheets are set before first paint there, and
+    // scrolling would undo the scroll to a URL fragment (#14973).
+    // The one pixel nudge keeps the reader where they were.
+    const refreshSafariScrollbar = () => {
       if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
         manageTransitions("body", false);
-        window.scrollTo(0, 1);
+        const scrollY = window.scrollY;
+        window.scrollTo(0, scrollY > 0 ? scrollY - 1 : 1);
         setTimeout(() => {
-          window.scrollTo(0, 0);
+          window.scrollTo(0, scrollY);
           manageTransitions("body", true);
         }, 40);
       }
@@ -235,6 +243,7 @@ ul.task-list li input[type="checkbox"] {
       // Read the current dark / light value
       let toAlternate = !hasAlternateSentinel();
       toggleColorMode(toAlternate);
+      refreshSafariScrollbar();
       setStyleSentinel(toAlternate);
       toggleGiscusIfUsed(toAlternate, darkModeDefault);
       window.dispatchEvent(new Event('resize'));
@@ -249,13 +258,13 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
+  <nav class="quarto-secondary-nav" aria-label="Toolbar">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Laboratory_Exercise_12_Introduction_to_Mendelian_Genetics.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Introduction to Mendelian Genetics</strong></span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="Breadcrumbs"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Laboratory_Exercise_12_Introduction_to_Mendelian_Genetics.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><strong>Introduction to Mendelian Genetics</strong></span></a></li></ol></nav>
+        <a class="flex-grow-1" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -266,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto" aria-label="Site">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Introduction to Human Biology Laboratory Workbook</a> 
@@ -295,7 +304,7 @@ ul.task-list li input[type="checkbox"] {
           </li>
       </ul>
     </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <button type="button" role="switch" aria-checked="false" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode" aria-label="Toggle dark mode"><i class="bi"></i></button>
 </div>
     </div>
       </div>
@@ -386,14 +395,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./Laboratory_Exercise_10_Mitosis_and_Meiosis_VM.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><strong>Mitosis and Meiosis</strong></span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Laboratory_Exercise_11_Mendelian_Genetics_in_Corn_and_Chi_Square_Testing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><strong>Mendelian Genetics in Corn and Chi-Square Testing</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Mendelian Genetics in Corn and Chi-Square Testing</strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./Laboratory_Exercise_12_Introduction_to_Mendelian_Genetics.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Introduction to Mendelian Genetics</strong></span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><strong>Introduction to Mendelian Genetics</strong></span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -408,34 +423,34 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">11.1</span> <strong>Introduction</strong></a></li>
-  <li><a href="#pre-lab-activity-12.1-questions-and-definitions" id="toc-pre-lab-activity-12.1-questions-and-definitions" class="nav-link" data-scroll-target="#pre-lab-activity-12.1-questions-and-definitions"><span class="header-section-number">11.2</span> <strong>Pre-Lab Activity 12.1: Questions and Definitions</strong></a></li>
-  <li><a href="#monohybrid-cross-problems-using-a-punnett-square" id="toc-monohybrid-cross-problems-using-a-punnett-square" class="nav-link" data-scroll-target="#monohybrid-cross-problems-using-a-punnett-square"><span class="header-section-number">11.3</span> <strong>Monohybrid Cross Problems Using a Punnett Square</strong></a></li>
-  <li><a href="#extensions-of-monohybrid-crosses" id="toc-extensions-of-monohybrid-crosses" class="nav-link" data-scroll-target="#extensions-of-monohybrid-crosses"><span class="header-section-number">11.4</span> <strong>Extensions of Monohybrid Crosses</strong></a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">12.1</span> <strong>Introduction</strong></a></li>
+  <li><a href="#pre-lab-activity-12.1-questions-and-definitions" id="toc-pre-lab-activity-12.1-questions-and-definitions" class="nav-link" data-scroll-target="#pre-lab-activity-12.1-questions-and-definitions"><span class="header-section-number">12.2</span> <strong>Pre-Lab Activity 12.1: Questions and Definitions</strong></a></li>
+  <li><a href="#monohybrid-cross-problems-using-a-punnett-square" id="toc-monohybrid-cross-problems-using-a-punnett-square" class="nav-link" data-scroll-target="#monohybrid-cross-problems-using-a-punnett-square"><span class="header-section-number">12.3</span> <strong>Monohybrid Cross Problems Using a Punnett Square</strong></a></li>
+  <li><a href="#extensions-of-monohybrid-crosses" id="toc-extensions-of-monohybrid-crosses" class="nav-link" data-scroll-target="#extensions-of-monohybrid-crosses"><span class="header-section-number">12.4</span> <strong>Extensions of Monohybrid Crosses</strong></a>
   <ul class="collapse">
-  <li><a href="#monohybrid-crosses-with-codominance" id="toc-monohybrid-crosses-with-codominance" class="nav-link" data-scroll-target="#monohybrid-crosses-with-codominance"><span class="header-section-number">11.4.1</span> <strong>Monohybrid Crosses with Codominance</strong></a></li>
-  <li><a href="#monohybrid-crosses-with-sex-linkage" id="toc-monohybrid-crosses-with-sex-linkage" class="nav-link" data-scroll-target="#monohybrid-crosses-with-sex-linkage"><span class="header-section-number">11.4.2</span> <strong>Monohybrid Crosses with Sex Linkage</strong></a></li>
-  <li><a href="#monohybrid-crosses-with-incomplete-dominance" id="toc-monohybrid-crosses-with-incomplete-dominance" class="nav-link" data-scroll-target="#monohybrid-crosses-with-incomplete-dominance"><span class="header-section-number">11.4.3</span> <strong>Monohybrid Crosses with Incomplete Dominance</strong></a></li>
-  <li><a href="#comparative-summary" id="toc-comparative-summary" class="nav-link" data-scroll-target="#comparative-summary"><span class="header-section-number">11.4.4</span> <strong>Comparative Summary</strong></a></li>
+  <li><a href="#monohybrid-crosses-with-codominance" id="toc-monohybrid-crosses-with-codominance" class="nav-link" data-scroll-target="#monohybrid-crosses-with-codominance"><span class="header-section-number">12.4.1</span> <strong>Monohybrid Crosses with Codominance</strong></a></li>
+  <li><a href="#monohybrid-crosses-with-sex-linkage" id="toc-monohybrid-crosses-with-sex-linkage" class="nav-link" data-scroll-target="#monohybrid-crosses-with-sex-linkage"><span class="header-section-number">12.4.2</span> <strong>Monohybrid Crosses with Sex Linkage</strong></a></li>
+  <li><a href="#monohybrid-crosses-with-incomplete-dominance" id="toc-monohybrid-crosses-with-incomplete-dominance" class="nav-link" data-scroll-target="#monohybrid-crosses-with-incomplete-dominance"><span class="header-section-number">12.4.3</span> <strong>Monohybrid Crosses with Incomplete Dominance</strong></a></li>
+  <li><a href="#comparative-summary" id="toc-comparative-summary" class="nav-link" data-scroll-target="#comparative-summary"><span class="header-section-number">12.4.4</span> <strong>Comparative Summary</strong></a></li>
   </ul></li>
-  <li><a href="#dihybrid-crosses" id="toc-dihybrid-crosses" class="nav-link" data-scroll-target="#dihybrid-crosses"><span class="header-section-number">11.5</span> <strong>Dihybrid Crosses</strong></a></li>
-  <li><a href="#key-terms-glossary" id="toc-key-terms-glossary" class="nav-link" data-scroll-target="#key-terms-glossary"><span class="header-section-number">11.6</span> <strong>Key Terms / Glossary</strong></a></li>
-  <li><a href="#post-lab-analysis-questions" id="toc-post-lab-analysis-questions" class="nav-link" data-scroll-target="#post-lab-analysis-questions"><span class="header-section-number">11.7</span> <strong>Post-Lab Analysis Questions</strong></a></li>
-  <li><a href="#procedure-overview" id="toc-procedure-overview" class="nav-link" data-scroll-target="#procedure-overview"><span class="header-section-number">11.8</span> <strong>Procedure Overview</strong></a></li>
+  <li><a href="#dihybrid-crosses" id="toc-dihybrid-crosses" class="nav-link" data-scroll-target="#dihybrid-crosses"><span class="header-section-number">12.5</span> <strong>Dihybrid Crosses</strong></a></li>
+  <li><a href="#key-terms-glossary" id="toc-key-terms-glossary" class="nav-link" data-scroll-target="#key-terms-glossary"><span class="header-section-number">12.6</span> <strong>Key Terms / Glossary</strong></a></li>
+  <li><a href="#post-lab-analysis-questions" id="toc-post-lab-analysis-questions" class="nav-link" data-scroll-target="#post-lab-analysis-questions"><span class="header-section-number">12.7</span> <strong>Post-Lab Analysis Questions</strong></a></li>
+  <li><a href="#procedure-overview" id="toc-procedure-overview" class="nav-link" data-scroll-target="#procedure-overview"><span class="header-section-number">12.8</span> <strong>Procedure Overview</strong></a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/decalendar/lab/edit/main/Laboratory_Exercise_12_Introduction_to_Mendelian_Genetics.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/decalendar/lab/blob/main/Laboratory_Exercise_12_Introduction_to_Mendelian_Genetics.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Introduction to Mendelian Genetics</strong></span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title"><strong>Introduction to Mendelian Genetics</strong></span></h1>
 </div>
 
 
@@ -452,8 +467,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">11.1</span> <strong>Introduction</strong></h2>
+<section id="introduction" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">12.1</span> <strong>Introduction</strong></h2>
 <p>Gregor Mendel is widely recognized as the <strong>father of modern genetics</strong> because his experiments provided the first clear explanation of how inherited characteristics are transmitted from one generation to the next. Mendel was born in 1822 and grew up on a farm, where he developed an early interest in plants. His later education in mathematics and science, especially at the University of Vienna, helped him apply quantitative reasoning to biological questions.</p>
 <p>Between 1856 and 1865, Mendel conducted controlled breeding experiments using pea plants (<em>Pisum sativum</em>). He selected pea plants because they possessed easily observed traits, reproduced quickly, and could be artificially fertilized under controlled conditions. By tracking characteristics such as seed shape, seed color, flower color, and plant height across generations, he demonstrated that traits are inherited as discrete hereditary units rather than blending together. These findings became the conceptual basis for what are now called genes.</p>
 <p>Mendel presented his results to the Natural History Society of Brno in 1865 and published them in 1866 in a paper titled <em>Experiments in Plant Hybridization</em>. Despite the importance of his conclusions, the work attracted little attention at the time. Historians and science references note that his paper circulated only narrowly and that many contemporary scientists did not appreciate the significance of his mathematical treatment of inheritance. Mendel’s work was not widely recognized until about 1900, when other scientists rediscovered similar inheritance patterns and connected them to his earlier publication.</p>
@@ -480,8 +495,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Dihybrid crosses</p></li>
 </ul>
 </section>
-<section id="pre-lab-activity-12.1-questions-and-definitions" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="pre-lab-activity-12.1-questions-and-definitions"><span class="header-section-number">11.2</span> <strong>Pre-Lab Activity 12.1: Questions and Definitions</strong></h2>
+<section id="pre-lab-activity-12.1-questions-and-definitions" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="pre-lab-activity-12.1-questions-and-definitions"><span class="header-section-number">12.2</span> <strong>Pre-Lab Activity 12.1: Questions and Definitions</strong></h2>
 <ol type="1">
 <li><p>Why is Gregor Mendel considered the founder of modern genetics?</p></li>
 <li><p>Why were pea plants especially useful for Mendel’s studies of inheritance?</p></li>
@@ -495,8 +510,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>If two heterozygous individuals are crossed for a single trait showing complete dominance, what genotypic and phenotypic ratios would you predict?</p></li>
 </ol>
 </section>
-<section id="monohybrid-cross-problems-using-a-punnett-square" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="monohybrid-cross-problems-using-a-punnett-square"><span class="header-section-number">11.3</span> <strong>Monohybrid Cross Problems Using a Punnett Square</strong></h2>
+<section id="monohybrid-cross-problems-using-a-punnett-square" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="monohybrid-cross-problems-using-a-punnett-square"><span class="header-section-number">12.3</span> <strong>Monohybrid Cross Problems Using a Punnett Square</strong></h2>
 <p>A <strong>monohybrid cross</strong> follows the inheritance of a <strong>single gene or trait</strong>. In a Punnett square, the possible <strong>gametes</strong> from one parent are written across the top, and the possible gametes from the other parent are written along the side. Each box inside the square represents one possible offspring genotype. This allows students to predict both <strong>genotypic ratios</strong> and <strong>phenotypic ratios</strong> for a cross.</p>
 <p>For a trait that follows <strong>complete dominance</strong>, the <strong>dominant allele</strong> is expressed whenever it is present, while the <strong>recessive allele</strong> is expressed only when an individual has two recessive copies.</p>
 <p><strong>Problem 1: Worked Example: Homozygous Dominant × Homozygous Recessive</strong></p>
@@ -679,12 +694,12 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
 <p><strong><br>
 </strong></p>
 </section>
-<section id="extensions-of-monohybrid-crosses" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="extensions-of-monohybrid-crosses"><span class="header-section-number">11.4</span> <strong>Extensions of Monohybrid Crosses</strong></h2>
+<section id="extensions-of-monohybrid-crosses" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="extensions-of-monohybrid-crosses"><span class="header-section-number">12.4</span> <strong>Extensions of Monohybrid Crosses</strong></h2>
 <p>Not all inherited traits follow the simple dominant–recessive pattern first described by Mendel in pea plants. Although Mendel’s work established the basic principles of segregation and inheritance, later studies demonstrated that some traits exhibit alternative inheritance patterns, including codominance, incomplete dominance, and sex-linked inheritance. These patterns can still be analyzed using the same general approach as a standard monohybrid cross, but the relationship between genotype and phenotype differs from that seen in complete dominance. <a href="http://www.mendelianum.cz/images/files/Mendel-paper-1866-english.pdf">[Experiment...gor Mendel]</a>, <a href="https://en.wikipedia.org/wiki/Experiments_on_Plant_Hybridization">[en.wikipedia.org]</a></p>
 <p>In the following sections, you will examine three important extensions of Mendelian inheritance. For each pattern, you should determine the parental genotypes, identify the possible gametes, construct a Punnett square, and then predict both the genotypic and phenotypic outcomes of the cross. Although the Punnett square method remains the same, interpretation of the offspring changes depending on the dominance relationship between the alleles or on whether the gene is carried on an autosome or a sex chromosome.</p>
-<section id="monohybrid-crosses-with-codominance" class="level3" data-number="11.4.1">
-<h3 data-number="11.4.1" class="anchored" data-anchor-id="monohybrid-crosses-with-codominance"><span class="header-section-number">11.4.1</span> <strong>Monohybrid Crosses with Codominance</strong></h3>
+<section id="monohybrid-crosses-with-codominance" class="level3" data-number="12.4.1">
+<h3 data-number="12.4.1" class="anchored" data-anchor-id="monohybrid-crosses-with-codominance"><span class="header-section-number">12.4.1</span> <strong>Monohybrid Crosses with Codominance</strong></h3>
 <p>In codominance, both alleles in a heterozygous individual are fully and distinctly expressed in the phenotype; one allele does not mask the other. A classic biological example is the ABO blood group system, in which the <strong>Iᴬ</strong> and <strong>Iᴮ</strong> alleles are <strong>codominant</strong> and are both expressed in individuals with genotype <strong>IᴬIᴮ,</strong> producing blood type <strong>AB</strong>. Allele <strong>i</strong>, when it appears, is recessive and is masked by either <strong>I<sup>A</sup></strong> or <strong>I<sup>B</sup></strong>. In laboratory exercises, codominance is often illustrated with coat-color traits in animals, such as red and white coat alleles in cattle, where the heterozygote displays both red and white hairs.</p>
 <p><strong>Solved Example: Codominance</strong></p>
 <p>In cattle, red coat color (<strong>Cᴿ</strong>) and white coat color (<strong>Cᵂ</strong>) are codominant. A heterozygous animal with genotype <strong>CᴿCᵂ</strong> has a roan coat, meaning that both red and white hairs are visible. Cross two roan cattle.</p>
@@ -764,8 +779,8 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
 <li><p>In a codominant system, why does a 1 : 2 : 1 phenotypic ratio occur in a heterozygote × heterozygote cross rather than the 3 : 1 phenotypic ratio seen in complete dominance?</p></li>
 </ol>
 </section>
-<section id="monohybrid-crosses-with-sex-linkage" class="level3" data-number="11.4.2">
-<h3 data-number="11.4.2" class="anchored" data-anchor-id="monohybrid-crosses-with-sex-linkage"><span class="header-section-number">11.4.2</span> <strong>Monohybrid Crosses with Sex Linkage</strong></h3>
+<section id="monohybrid-crosses-with-sex-linkage" class="level3" data-number="12.4.2">
+<h3 data-number="12.4.2" class="anchored" data-anchor-id="monohybrid-crosses-with-sex-linkage"><span class="header-section-number">12.4.2</span> <strong>Monohybrid Crosses with Sex Linkage</strong></h3>
 <p>A sex-linked trait is determined by a gene located on a sex chromosome, most commonly the X chromosome. In humans and many other organisms, females typically have two X chromosomes (XX) and males have one X and one Y chromosome (XY). Because males have only one X chromosome, they possess only a single copy of most X-linked genes and will express a recessive X-linked allele whenever it is present. Females generally must inherit two recessive alleles to express a recessive X-linked trait. As a result, X-linked recessive conditions often occur more frequently in males than in females.</p>
 <p>A common instructional example is red–green color blindness, which is usually treated as an X-linked recessive trait. In this notation, Xᴺ represents the normal-vision allele and Xⁿ represents the color-blind allele; the Y chromosome does not carry a corresponding allele for this trait.</p>
 <p><strong>Solved Example: Sex Linkage</strong></p>
@@ -840,8 +855,8 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
 <li><strong>Why is the notation for sex-linked crosses different from that used in autosomal monohybrid crosses? Relate your answer to the fact that the Y chromosome often lacks a corresponding allele for many X-linked genes.</strong></li>
 </ol>
 </section>
-<section id="monohybrid-crosses-with-incomplete-dominance" class="level3" data-number="11.4.3">
-<h3 data-number="11.4.3" class="anchored" data-anchor-id="monohybrid-crosses-with-incomplete-dominance"><span class="header-section-number">11.4.3</span> <strong>Monohybrid Crosses with Incomplete Dominance</strong></h3>
+<section id="monohybrid-crosses-with-incomplete-dominance" class="level3" data-number="12.4.3">
+<h3 data-number="12.4.3" class="anchored" data-anchor-id="monohybrid-crosses-with-incomplete-dominance"><span class="header-section-number">12.4.3</span> <strong>Monohybrid Crosses with Incomplete Dominance</strong></h3>
 <p>In incomplete dominance, neither allele is completely dominant over the other, and the heterozygote displays an intermediate phenotype between the two homozygotes. This pattern differs from codominance because the heterozygote does not show both traits distinctly; instead, it shows a phenotype that appears blended or intermediate. A classic example is snapdragon flower color, in which red-flowered plants and white-flowered plants produce pink-flowered heterozygous offspring.</p>
 <p><strong>A commonly used notation for this trait is:</strong></p>
 <ul>
@@ -920,13 +935,13 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
 <li><strong>Explain why incomplete dominance can appear similar to “blending inheritance” at first glance yet still follows predictable Mendelian segregation patterns.</strong></li>
 </ol>
 </section>
-<section id="comparative-summary" class="level3" data-number="11.4.4">
-<h3 data-number="11.4.4" class="anchored" data-anchor-id="comparative-summary"><span class="header-section-number">11.4.4</span> <strong>Comparative Summary</strong></h3>
+<section id="comparative-summary" class="level3" data-number="12.4.4">
+<h3 data-number="12.4.4" class="anchored" data-anchor-id="comparative-summary"><span class="header-section-number">12.4.4</span> <strong>Comparative Summary</strong></h3>
 <p>These three types of monohybrid crosses illustrate that not all single-gene traits follow complete dominance. In codominance, both alleles are fully expressed in the heterozygote. In incomplete dominance, neither allele is fully dominant, and the heterozygote has an intermediate phenotype. In sex-linked inheritance, the pattern of transmission depends on whether the gene is located on a sex chromosome and whether the offspring is male or female. Despite these differences, each pattern can still be analyzed using the same stepwise process of identifying parental genotypes, determining gametes, constructing a Punnett square, and interpreting the resulting genotypic and phenotypic ratios., <a href="https://courses.lumenlearning.com/suny-oneonta-osbiology2e-1/chapter/characteristics-and-traits/" class="uri">https://courses.lumenlearning.com/suny-oneonta-osbiology2e-1/chapter/characteristics-and-traits/</a></p>
 </section>
 </section>
-<section id="dihybrid-crosses" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="dihybrid-crosses"><span class="header-section-number">11.5</span> <strong>Dihybrid Crosses</strong></h2>
+<section id="dihybrid-crosses" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="dihybrid-crosses"><span class="header-section-number">12.5</span> <strong>Dihybrid Crosses</strong></h2>
 <p>A <strong>dihybrid cross</strong> is a genetic cross that examines the inheritance of <strong>two different traits (two genes) simultaneously</strong>. While a monohybrid cross follows one trait, a dihybrid cross allows us to observe how alleles of different genes are inherited together and whether they assort independently. This concept reflects <strong>Mendel’s principle of independent assortment</strong>, which states that alleles of different genes are distributed independently into gametes (provided the genes are not linked).</p>
 <p>In a dihybrid cross, each parent contributes <strong>two alleles for each of two genes</strong>, and each gamete receives <strong>one allele from each gene</strong>. As a result, more combinations of gametes are possible compared to a monohybrid cross.</p>
 <p><strong>Using FOIL to Determine Gametes</strong></p>
@@ -1165,8 +1180,8 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
 <p><strong>Summary</strong></p>
 <p>Dihybrid crosses extend the principles learned in monohybrid crosses by examining <strong>two traits simultaneously</strong>. The use of the <strong>FOIL method</strong> simplifies the process of determining gametes, and Punnett squares allow prediction of offspring outcomes. When both parents are heterozygous and genes assort independently, the expected phenotypic ratio is <strong>9:3:3:1</strong>, but deviations from this ratio can reveal additional biological insights such as <strong>linkage or test crosses</strong>.</p>
 </section>
-<section id="key-terms-glossary" class="level2" data-number="11.6">
-<h2 data-number="11.6" class="anchored" data-anchor-id="key-terms-glossary"><span class="header-section-number">11.6</span> <strong>Key Terms / Glossary</strong></h2>
+<section id="key-terms-glossary" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="key-terms-glossary"><span class="header-section-number">12.6</span> <strong>Key Terms / Glossary</strong></h2>
 <p><strong>Trait</strong> – A heritable characteristic or feature of an organism, such as flower color or seed shape.</p>
 <p><strong>Gene</strong> – A basic unit of heredity that contributes to a specific biological characteristic.</p>
 <p><strong>Locus</strong> – The specific location of a gene on a chromosome.</p>
@@ -1184,8 +1199,8 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
 <p><strong>Codominance</strong> – A pattern of inheritance in which both alleles are fully expressed in the heterozygous phenotype.</p>
 <p><strong>Sex-Linked Inheritance</strong> – Inheritance of traits determined by genes located on the sex chromosomes, commonly the X chromosome.</p>
 </section>
-<section id="post-lab-analysis-questions" class="level2" data-number="11.7">
-<h2 data-number="11.7" class="anchored" data-anchor-id="post-lab-analysis-questions"><span class="header-section-number">11.7</span> <strong>Post-Lab Analysis Questions</strong></h2>
+<section id="post-lab-analysis-questions" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="post-lab-analysis-questions"><span class="header-section-number">12.7</span> <strong>Post-Lab Analysis Questions</strong></h2>
 <ol type="1">
 <li><p>Briefly explain how Mendel’s experiments with pea plants contributed to the development of modern genetics.</p></li>
 <li><p>In your own words, distinguish between a <strong>gene</strong>, an <strong>allele</strong>, and a <strong>trait</strong>.</p></li>
@@ -1228,8 +1243,8 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
 <p>All third-party materials have been used in accordance with their respective licensing terms. This lab manual chapter represents a modified and integrated educational resource, and any errors or interpretations are the responsibility of the author.</p>
 </blockquote>
 </section>
-<section id="procedure-overview" class="level2" data-number="11.8">
-<h2 data-number="11.8" class="anchored" data-anchor-id="procedure-overview"><span class="header-section-number">11.8</span> <strong>Procedure Overview</strong></h2>
+<section id="procedure-overview" class="level2" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="procedure-overview"><span class="header-section-number">12.8</span> <strong>Procedure Overview</strong></h2>
 <p><strong>Part I. Review of Mendelian Terminology and Genetic Notation</strong></p>
 <ol type="1">
 <li><p>Review the definitions of the terms provided in the glossary.</p></li>
@@ -1283,15 +1298,50 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const toggle = window.document.createElement('button');
+      toggle.type = "button";
+      toggle.setAttribute("role", "switch");
+      toggle.setAttribute("aria-checked", "false");
+      toggle.classList.add('top-right');
+      toggle.classList.add('quarto-color-scheme-toggle');
+      toggle.setAttribute("aria-label", "Toggle dark mode");
+      toggle.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
       const i = window.document.createElement("i");
       i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
+      toggle.appendChild(i);
+      // Put the toggle in a landmark of its own, so that landmark navigation
+      // can reach it.
+      //
+      // The container is always a fresh direct child of body, and the toggle is
+      // never moved into page furniture that the theme or the author controls.
+      // The toggle is positioned against the page, so any ancestor that
+      // establishes a containing block captures it: a positioned element or a
+      // grid for position: absolute, and transform, filter, will-change or
+      // contain for position: fixed. A direct child of body has none of these
+      // to inherit, and the shift when one appears is silent and visual.
+      //
+      // ARIA says a document should have at most one banner, and axe reports a
+      // duplicate whether or not the banners carry distinct labels. So use a
+      // header when the page has no banner yet, and a named region otherwise.
+      //
+      // A header is a banner wherever it sits, unless it is inside sectioning
+      // content, so this cannot just look at the children of body: a custom
+      // page layout wraps the title block header in a plain div. An explicit
+      // role="banner" always counts.
+      const sectioning = 'article, aside, main, nav, section, [role="article"], [role="complementary"], [role="main"], [role="navigation"], [role="region"]';
+      const hasBanner = Array.from(
+        window.document.querySelectorAll('header:not([role]), [role="banner"]')
+      ).some(function(el) {
+        return el.hasAttribute("role") || el.closest(sectioning) === null;
+      });
+      const container = window.document.createElement(hasBanner ? "div" : "header");
+      if (hasBanner) {
+        container.setAttribute("role", "region");
+        container.setAttribute("aria-label", "Toggle dark mode");
+      }
+      container.classList.add('quarto-color-scheme-toggle-container');
+      container.appendChild(toggle);
+      window.document.body.appendChild(container);
     }
     setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
@@ -1370,7 +1420,8 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -1379,8 +1430,69 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -1394,6 +1506,7 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -1556,44 +1669,54 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -1692,10 +1815,13 @@ A smooth-kernel plant is crossed with a wrinkled-kernel plant. Among the offspri
     }
   });
   </script>
-<nav class="page-navigation">
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+<nav class="page-navigation" aria-label="Page">
   <div class="nav-page nav-page-previous">
       <a href="./Laboratory_Exercise_11_Mendelian_Genetics_in_Corn_and_Chi_Square_Testing.html" class="pagination-link" aria-label="**Mendelian Genetics in Corn and Chi-Square Testing**">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title"><strong>Mendelian Genetics in Corn and Chi-Square Testing</strong></span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title"><strong>Mendelian Genetics in Corn and Chi-Square Testing</strong></span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
