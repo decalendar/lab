@@ -4,9 +4,9 @@ image: images/pres.png
 css: slide-deck.css
 resources:
   - demo/index.html
+  - demo/demo.pdf
   - demo/index_files/**
   - demo/styles.css
-  - demo/chisq.ipynb
 ---
 
 # **Quarto presentation** {.unnumbered}
@@ -27,17 +27,14 @@ For best results, I suggest following the PDF export instructions in the [Reveal
 
 PDF files are ubiquitous and it is good to know that you can generate one with nothing more than a web browser whenever necessary, but HTML files can do many things that PDF files simply cannot.
 
-The example presentation below shows what is expected for the Research Presentation assignment. It covers chi-square (χ^2^) testing in genetics from Chapter 11 of the lab manual and models each part of the rubric:
+The single-slide poster below is an example of a research presentation on diabetes mellitus. It models key elements of the assignment rubric:
 
-- **Scientific content and research quality:** accurate explanations supported by academic sources, including a human genetics example
-- **Organization and structure:** a clear introduction, body, and conclusion
-- **Visual aids:** labeled figures and tables, readable slides, and citations on the slides and in a references slide
-- **Oral delivery:** speaker notes on every slide (press <kbd>S</kbd> while viewing the HTML presentation to open the speaker view)
+- **Scientific content and research quality:** accurate explanations supported by credible health sources
+- **Organization and structure:** a clear overview of glucose regulation, diabetes types, diagnosis, and care
+- **Visual design:** readable sections, diagnostic thresholds, and citations
 - **Submission and accessibility:** a working web link to both an HTML and a PDF version
 
-The equations are written in [LaTeX](https://en.wikipedia.org/wiki/LaTeX#:~:text=a%20software%20system%20for%20typesetting%20documents) (e.g., `$\chi^2$`), and the R output and figures are embedded from a Jupyter notebook, [chisq.ipynb](demo/chisq.ipynb), that was run locally before the presentation was published. Because the notebook's output is saved in the notebook itself, the website can be built without installing R.
-
-The HTML presentation is shown first, followed by the PDF version.
+The HTML poster is shown first, followed by the PDF version.
 
 ::: {}
 ```{=html}
@@ -51,7 +48,7 @@ The HTML presentation is shown first, followed by the PDF version.
 ```
 :::
 
-Instead of embedding your presentation in a webpage as shown above, you can view it in its own browser tab in [HTML](demo/) or [PDF](demo/demo.pdf) format.
+Instead of embedding the poster in a webpage as shown above, you can view it in its own browser tab in [HTML](demo/) or [PDF](demo/demo.pdf) format.
 
 To edit a presentation, you can modify the plain text of the associated qmd file in a [text editor](https://en.wikipedia.org/wiki/Text_editor) or work with a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) version via the [Visual Mode](https://docs.posit.co/ide/user/ide/guide/documents/visual-editor.html) in RStudio, VSCode, Codespaces, or Positron.
 

@@ -128,21 +128,14 @@ During this activity you will work in *pairs.*
 
 **Data Table 10.1: Number of Cells Observed**
 
-  ------------------------------------------------------------------------------
-  **Phase**    **Individual totals**   **Group Total**           **Percent**
-  ------------ ----------------------- ------------------------- ---------------
-  Interphase
-
-  Prophase
-
-  Metaphase
-
-  Anaphase
-
-  Telophase
-
-  Total                                                          100%
-  ------------------------------------------------------------------------------
+| **Phase**  | **Individual totals** | **Group Total** | **Percent** |
+|:-----------|:----------------------|:----------------|:------------|
+| Interphase | 3254324               |                 |             |
+| Prophase   |                       |                 |             |
+| Metaphase  |                       |                 |             |
+| Anaphase   |                       |                 |             |
+| Telophase  |                       |                 |             |
+| Total      |                       |                 | 100%        |
 
 ### **Calculating Mitotic Index**
 
@@ -180,17 +173,12 @@ Cells in mitosis = Prophase + Metaphase + Anaphase + Telophase
 
 **Data Table 10.2: Comparison of Plant and Animal Mitotic Cells**
 
-  -----------------------------------------------------------------------------
-  **Characteristic**      **Plant Cells**            **Animal Cells**
-  ----------------------- -------------------------- --------------------------
-  Cell shape
-
-  Cell wall present?
-
-  Cytokinesis mechanism
-
-  Centrioles visible?
-  -----------------------------------------------------------------------------
+| **Characteristic**    | **Plant Cells** | **Animal Cells** |
+|:----------------------|:----------------|:-----------------|
+| Cell shape            |                 |                  |
+| Cell wall present?    |                 |                  |
+| Cytokinesis mechanism |                 |                  |
+| Centrioles visible?   |                 |                  |
 
 ### **Analysis Questions**
 
@@ -304,29 +292,18 @@ Using the 2n = 4 model:
 
 **Data Table 10.3: Gamete Combinations from Independent Assortment**
 
-  ------------------------------------
-  **Trial**   **Gamete Combination**
-  ----------- ------------------------
-  1
-
-  2
-
-  3
-
-  4
-
-  5
-
-  6
-
-  7
-
-  8
-
-  9
-
-  10
-  ------------------------------------
+| **Trial** | **Gamete Combination** |
+|:----------|:-----------------------|
+| 1         |                        |
+| 2         |                        |
+| 3         |                        |
+| 4         |                        |
+| 5         |                        |
+| 6         |                        |
+| 7         |                        |
+| 8         |                        |
+| 9         |                        |
+| 10        |                        |
 
 ### **Analysis**
 
@@ -344,23 +321,15 @@ Complete the table.
 
 **Data Table 10.4: Comparison of Mitosis and Meiosis**
 
-  -----------------------------------------------------------
-  **Characteristic**              **Mitosis**   **Meiosis**
-  ------------------------------- ------------- -------------
-  Number of divisions
-
-  Number of daughter cells
-
-  Chromosome number maintained?
-
-  Crossing over occurs?
-
-  Genetic variation produced?
-
-  Cell type produced
-
-  Biological purpose
-  -----------------------------------------------------------
+| **Characteristic**            | **Mitosis** | **Meiosis** |
+|:------------------------------|:------------|:------------|
+| Number of divisions           |             |             |
+| Number of daughter cells      |             |             |
+| Chromosome number maintained? |             |             |
+| Crossing over occurs?         |             |             |
+| Genetic variation produced?   |             |             |
+| Cell type produced            |             |             |
+| Biological purpose            |             |             |
 
 ## **Post-Lab Discussion Questions**
 

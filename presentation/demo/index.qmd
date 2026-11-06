@@ -1,230 +1,83 @@
 ---
-title: "Diabetes Mellitus"
-subtitle: "How insulin, blood glucose, and health are connected"
-author: "Example Student"
-institute: "BIOL 110 · The Community College of Baltimore County"
+pagetitle: "Diabetes Mellitus poster"
 format:
   revealjs:
-    slide-number: true
-    controls: true
+    slide-number: false
+    controls: false
     preview-links: auto
+    width: 1440
+    height: 1120
+    margin: 0.025
+    center: false
     css: styles.css
     include-in-header: pdf-export.html
-    footer: "Diabetes mellitus · BIOL 110 example presentation"
 ---
 
-## Why does blood glucose matter?
+## Diabetes Mellitus {.poster-slide}
 
-- Cells use **glucose** as an important fuel
-- Blood glucose rises after a meal and falls between meals
-- The body keeps it within a healthy range through coordinated hormone signals
-
-. . .
-
-**Diabetes mellitus** is a group of conditions in which blood glucose stays too high because insulin is absent, insufficient, or not working effectively.
-
-::: notes
-Start with the body's everyday task of keeping glucose available to cells without allowing too much to remain in the blood. Clarify that this talk is about diabetes mellitus, not diabetes insipidus, which is a different condition.
+::: {.poster-heading}
+**How insulin, blood glucose, and health are connected**<br>
+Example Student · BIOL 110 · The Community College of Baltimore County
 :::
 
-## Normal glucose regulation
-
-::::: columns
-::: {.column width="50%"}
-**After a meal**
-
-- Blood glucose increases
-- Pancreatic beta cells release **insulin**
-- Body tissues take up and use or store more glucose
-- The liver reduces glucose release
+::: {.poster-lead}
+**The central idea:** Diabetes mellitus is a group of conditions in which blood glucose stays too high because insulin is absent, insufficient, or not working effectively. [1, 2]
 :::
 
-::: {.column width="50%"}
-**Between meals**
+:::: {.poster-grid}
 
-- Blood glucose begins to fall
-- The pancreas releases **glucagon**
-- The liver releases stored glucose
-- Blood glucose is supported between meals
-:::
-:::::
+::: {.poster-panel}
+**Blood glucose regulation**
 
-::: notes
-Insulin and glucagon have complementary roles. Keep the model simple: insulin supports glucose uptake and storage, while glucagon signals the liver to make glucose available.
-:::
-
-## What changes in diabetes?
-
-- Glucose remains in the bloodstream instead of being regulated normally
-- The cause involves **insulin production**, **insulin action**, or both
-- Persistent hyperglycemia can affect many organs over time
-
-. . .
-
-Diabetes mellitus is **not one single disease**. Type 1, type 2, and gestational diabetes have different causes and care needs.
-
-::: notes
-Emphasize that a shared feature, high blood glucose, does not mean every type has the same cause or treatment.
-:::
-
-## The major types
-
-| Type | Main biological change | Key point |
-|:--|:--|:--|
-| **Type 1** | Immune system destroys pancreatic beta cells | Insulin is required for survival |
-| **Type 2** | Insulin resistance plus declining beta-cell function | The most common type; several factors contribute |
-| **Gestational** | High blood glucose first recognized during pregnancy | Requires care during pregnancy and follow-up afterward |
-
-::: notes
-These are broad patterns, not a way to diagnose someone from appearance or behavior. Other less common forms also exist.
-:::
-
-## Type 1 diabetes
-
-- An autoimmune process damages the pancreatic **beta cells** that make insulin
-- The body produces little or no insulin
-- It can begin at any age and is not caused by eating sugar or by a person's choices
-- Insulin therapy is essential
-
-::: notes
-Avoid describing type 1 as only a childhood condition. Explain that autoimmune destruction of beta cells leads to severe insulin deficiency.
-:::
-
-## Type 2 diabetes
-
-- Body tissues become less responsive to insulin: **insulin resistance**
-- The pancreas may initially compensate by making more insulin
-- Over time, beta cells may not meet the body's needs
-- Risk reflects interacting factors, including genetics, age, health history, and environment
-
-::: notes
-Type 2 is not simply a consequence of one food, body size, or behavior. Many people have risk factors they cannot control, and it can occur at any age.
-:::
-
-## Gestational diabetes
-
-- Develops during pregnancy when the body cannot make enough insulin to meet increased needs
-- Often has no obvious symptoms, so screening matters
-- Care helps manage risks to the pregnant person and baby
-- Blood glucose should be rechecked after birth; future type 2 risk is higher
-
-::: notes
-Present gestational diabetes without blame. It commonly improves after pregnancy, but follow-up testing is important because risk remains elevated.
-:::
-
-## Possible signs and symptoms
-
-- Increased thirst and urination
-- Increased hunger or unexplained weight loss
-- Fatigue or blurry vision
-- Slow-healing sores or recurrent infections
-
-. . .
-
-Some people, especially with type 2 diabetes, have **no noticeable symptoms** for a long time.
-
-::: notes
-Symptoms are not enough to diagnose diabetes. Sudden severe symptoms, vomiting, confusion, or difficulty breathing need urgent medical attention.
-:::
-
-## How is diabetes diagnosed?
-
-| Test | Diabetes-range result |
+| After a meal | Between meals |
 |:--|:--|
-| A1C | **6.5% or higher** |
-| Fasting plasma glucose | **126 mg/dL or higher** after at least 8 hours without calories |
-| 2-hour oral glucose tolerance test | **200 mg/dL or higher** after a 75 g glucose drink |
-| Random plasma glucose | **200 mg/dL or higher** with classic symptoms or hyperglycemic crisis |
+| Blood glucose rises → pancreatic beta cells release **insulin** → tissues take up or store more glucose; the liver reduces glucose release. | Blood glucose falls → the pancreas releases **glucagon** → the liver releases stored glucose. |
 
-::: aside
-For someone without unequivocal hyperglycemia, an abnormal result is generally confirmed with repeat testing.
+Diabetes disrupts this regulation through changes in insulin production, insulin action, or both. [1, 2]
 :::
 
-::: notes
-These are standard diagnostic thresholds for nonpregnant people. Pregnancy uses distinct screening and diagnostic approaches. Diagnosis and test selection belong with a qualified health professional.
+::: {.poster-panel}
+**Three major types**
+
+**Type 1** — An autoimmune process damages insulin-producing beta cells. Little or no insulin is made; insulin therapy is essential. [1, 2]
+
+**Type 2** — Tissues become less responsive to insulin, and beta cells may not meet the body's needs. Multiple factors contribute. [1, 2]
+
+**Gestational** — High blood glucose develops during pregnancy. Follow-up testing after birth matters because future type 2 risk is higher. [1, 2]
 :::
 
-## What does A1C tell us?
+::: {.poster-panel}
+**Possible signs & diagnosis**
 
-- A1C estimates average blood glucose over roughly the **past 2–3 months**
-- It does not show day-to-day highs and lows
-- A1C can be misleading when red blood cell lifespan or hemoglobin is affected
-- Other tests may be preferred in some situations
+Possible signs include increased thirst or urination, hunger, fatigue, blurry vision, or unexplained weight loss. Some people have no noticeable symptoms. [2]
 
-::: notes
-Examples that can affect A1C interpretation include some anemias, hemoglobin variants, recent blood loss or transfusion, and pregnancy. The clinician interprets the result in context.
+**Diabetes-range results for nonpregnant people** [1, 3]
+
+| Test | Result |
+|:--|:--|
+| A1C | **≥ 6.5%** |
+| Fasting plasma glucose | **≥ 126 mg/dL** |
+| 2-hour glucose tolerance test | **≥ 200 mg/dL** |
+| Random plasma glucose | **≥ 200 mg/dL** with classic symptoms or hyperglycemic crisis |
+
+Without unequivocal hyperglycemia, an abnormal result is generally confirmed with repeat testing. Pregnancy uses different criteria. [1, 3]
 :::
 
-## Interpreting a result
+::: {.poster-panel}
+**Protecting health**
 
-A fictional adult has a fasting plasma glucose of **130 mg/dL**. A repeat test on another day is **128 mg/dL**.
+Long-term high blood glucose can damage blood vessels and nerves, raising the risk of eye, kidney, nerve, and heart disease or stroke. Complications are not inevitable. [1, 2]
 
-- Both results are above the fasting diagnostic threshold of 126 mg/dL
-- Repeating an abnormal result helps confirm it when there are no clear symptoms
-- A clinician interprets the results alongside health history and other evidence
-
-::: notes
-This is an educational example, not a self-diagnosis exercise. Ask the class which threshold applies and why confirmation matters.
+- **Type 1:** insulin is essential.
+- **Type 2:** individualized nutrition, activity, medicines, and/or insulin.
+- **All types:** monitoring and preventive checks with a health-care team. [4]
+- Healthy habits or programs can lower type 2 risk, not eliminate it; type 1 has no established prevention. [2]
 :::
 
-## Why long-term glucose levels matter
+::::
 
-Over time, diabetes can damage blood vessels and nerves, increasing the risk of:
+::: {.poster-sources}
+**Sources** · [1] American Diabetes Association Professional Practice Committee. *Diabetes Care*. 2025;48(Suppl. 1):S27–S49. doi:10.2337/dc25-S002. · [2] [CDC: About diabetes](https://www.cdc.gov/diabetes/about/index.html). · [3] [NIDDK: Diabetes tests & diagnosis](https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis). · [4] [NIDDK: Diabetes treatments](https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments).
 
-- **Eye disease** and vision loss
-- **Kidney disease**
-- **Nerve damage**, including in the feet
-- **Heart disease** and stroke
-
-::: notes
-Risk is not inevitable. Blood glucose management and regular preventive care can reduce the likelihood or severity of complications.
-:::
-
-## Management is individualized
-
-- Type 1 diabetes requires insulin
-- Type 2 care may include nutrition and activity changes, medicines, insulin, or combinations
-- Monitoring, sleep, stress, and support can all matter
-- Regular checks help protect the eyes, kidneys, nerves, heart, and blood vessels
-
-. . .
-
-There is no single plan that is right for everyone. Care is based on the person's health, goals, and circumstances.
-
-::: notes
-Avoid presenting a specific diet, medication, or glucose target as universal advice. People should make care decisions with their health-care team.
-:::
-
-## Can type 2 diabetes be prevented?
-
-- Healthy eating patterns and regular physical activity can lower risk for some people
-- Structured prevention programs can help people at high risk
-- Risk can be reduced, but prevention is not guaranteed
-- There is currently no established way to prevent type 1 diabetes
-
-::: notes
-Use nonjudgmental language. Prevention programs change probabilities; they do not assign fault or guarantee an outcome.
-:::
-
-## Take-home points
-
-- Insulin helps regulate blood glucose; diabetes disrupts this regulation
-- Type 1, type 2, and gestational diabetes have different causes
-- Laboratory testing, not symptoms or appearance alone, is used for diagnosis
-- Early care and ongoing management reduce the risk of complications
-
-::: notes
-Close by returning to the central idea: diabetes is a group of conditions involving glucose regulation, and understanding the type matters for care.
-:::
-
-## References {.smaller}
-
-::: {style="font-size: 0.8em;"}
-American Diabetes Association Professional Practice Committee. (2025). 2. Diagnosis and classification of diabetes: Standards of Care in Diabetes—2025. *Diabetes Care, 48*(Supplement 1), S27–S49. <https://doi.org/10.2337/dc25-S002>
-
-Centers for Disease Control and Prevention. (n.d.). *About diabetes*. <https://www.cdc.gov/diabetes/about/index.html>
-
-National Institute of Diabetes and Digestive and Kidney Diseases. (n.d.). *Diabetes tests & diagnosis*. <https://www.niddk.nih.gov/health-information/diabetes/overview/tests-diagnosis>
-
-National Institute of Diabetes and Digestive and Kidney Diseases. (n.d.). *Insulin, medicines, & other diabetes treatments*. <https://www.niddk.nih.gov/health-information/diabetes/overview/insulin-medicines-treatments>
+*Educational overview only—not a diagnostic tool or personal treatment advice.*
 :::

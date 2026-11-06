@@ -1,32 +1,196 @@
-.reveal table {
-  font-size: 0.8em;
+.reveal {
+  color: #173247;
+  font-family: "Aptos", "Segoe UI", sans-serif;
 }
 
-.reveal .cell-output pre code {
-  font-size: 0.85em;
+.reveal .slides section.poster-slide {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 14px;
+  overflow: hidden;
+  padding: 34px 46px;
+  background:
+    radial-gradient(ellipse at 92% 3%, rgba(32, 132, 145, 0.13), transparent 34%),
+    #f3f7fa;
+  color: #173247;
+  text-align: left;
 }
 
-.reveal .cell-output-display img {
-  width: 75%;
-  height: auto;
+.reveal .poster-slide h2 {
+  margin: 0;
+  color: #102b40;
+  font-size: 2em;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
 }
 
-/* Smaller table in the browser only; demo.pdf (exported with ?pdf-export) keeps the default size */
-html:not(.pdf-export) .reveal .critical-values table {
-  font-size: 0.8em;
+.poster-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+  color: #456477;
+  font-size: 0.52em;
 }
 
-/* Use the spare room on the code-heavy slides (7, 9 and 14) */
-.reveal .larger-code div.sourceCode pre code {
+.poster-heading p {
+  margin: 0;
+}
+
+.poster-lead {
+  border-left: 7px solid #16828f;
+  border-radius: 0 10px 10px 0;
+  padding: 12px 18px;
+  background: #e2f1f2;
+  font-size: 0.56em;
+  line-height: 1.35;
+}
+
+.poster-lead p {
+  margin: 0;
+}
+
+.poster-grid {
+  display: grid;
+  min-height: 0;
+  height: 730px;
+  flex: 0 0 730px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 0.8fr 1.2fr;
+  gap: 14px;
+}
+
+.poster-panel {
+  overflow: hidden;
+  border: 1px solid #d6e2e8;
+  border-top: 6px solid #16828f;
+  border-radius: 12px;
+  padding: 11px 16px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 4px 14px rgba(23, 50, 71, 0.06);
+  font-size: 0.41em;
+  line-height: 1.28;
+}
+
+.poster-panel:nth-child(2) {
+  border-top-color: #db8b39;
+}
+
+.poster-panel:nth-child(3) {
+  border-top-color: #4a78a8;
+}
+
+.poster-panel:nth-child(4) {
+  border-top-color: #6d8d58;
+}
+
+.poster-panel > p:first-child {
+  margin: 0 0 0.35em;
+  color: #102b40;
   font-size: 1.4em;
+  font-weight: 700;
 }
 
-/* Slide 14 has longer lines (trailing comments), so it gets a little less */
-.reveal .larger-code.mn-genotypes div.sourceCode pre code {
-  font-size: 1.25em;
+.poster-panel p {
+  margin: 0.45em 0;
 }
 
-/* Keep the caption below the plot clear of the footer */
-.reveal .observed-expected .cell-output-display img {
-  width: 72%;
+.poster-panel table {
+  width: 100%;
+  margin: 0.3em 0 0.45em;
+  border-collapse: collapse;
+  font-size: 0.92em;
+}
+
+.poster-panel th,
+.poster-panel td {
+  border-bottom: 1px solid #dce6eb;
+  padding: 0.24em 0.4em;
+  text-align: left;
+  vertical-align: top;
+}
+
+.poster-panel th {
+  color: #315268;
+  font-weight: 700;
+}
+
+.poster-panel td:first-child {
+  width: 42%;
+}
+
+.poster-panel ul {
+  margin: 0.35em 0 0;
+  padding-left: 1.1em;
+}
+
+.poster-panel li {
+  margin: 0.18em 0;
+}
+
+.poster-sources {
+  color: #456477;
+  font-size: 0.31em;
+  line-height: 1.35;
+}
+
+.poster-sources p {
+  margin: 0.25em 0;
+}
+
+.poster-sources a {
+  color: #176f81;
+}
+
+@media print {
+  @page {
+    size: 15in 11.6667in;
+    margin: 0;
+  }
+
+  html,
+  body,
+  .reveal {
+    width: 1440px !important;
+    height: 1120px !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .reveal {
+    position: static !important;
+    background: #f3f7fa !important;
+  }
+
+  .reveal .slides {
+    position: static !important;
+    width: 1440px !important;
+    height: 1120px !important;
+    overflow: hidden !important;
+    transform: none !important;
+  }
+
+  .reveal .slides section.poster-slide {
+    position: static !important;
+    display: flex !important;
+    width: 1440px !important;
+    height: 1120px !important;
+    margin: 0 !important;
+    transform: none !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .reveal .controls,
+  .reveal .progress,
+  .reveal .slide-number,
+  .reveal .slide-menu-button {
+    display: none !important;
+  }
 }
